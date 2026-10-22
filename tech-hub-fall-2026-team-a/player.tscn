@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dk6n1ug6r4mvw" path="res://player.gd" id="1_4flbx"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7qckb"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
 
 [node name="Player" type="CharacterBody2D" unique_id=942199509]
 script = ExtResource("1_4flbx")
@@ -14,7 +14,7 @@ offset_right = 20.0
 offset_bottom = 30.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1930519715]
-scale = Vector2(2, 2)
-shape = SubResource("CapsuleShape2D_7qckb")
+scale = Vector2(2, 3)
+shape = SubResource("RectangleShape2D_0xm2m")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=200276173]

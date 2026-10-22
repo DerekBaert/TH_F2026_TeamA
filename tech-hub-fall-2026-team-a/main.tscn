@@ -10,8 +10,8 @@ position = Vector2(1420, 850)
 scale = Vector2(15, 3)
 
 [node name="Platform2" parent="." unique_id=766229505 instance=ExtResource("1_ig7tw")]
-position = Vector2(960, 1250)
-scale = Vector2(100, 25)
+position = Vector2(960, 1300)
+scale = Vector2(100, 30)
 
 [node name="Platform3" parent="." unique_id=1688962478 instance=ExtResource("1_ig7tw")]
 position = Vector2(500, 850)
@@ -23,4 +23,3 @@ scale = Vector2(20, 3)
 
 [node name="Player" parent="." unique_id=942199509 instance=ExtResource("2_0xm2m")]
 position = Vector2(960, 969)
-acceleration = 7
