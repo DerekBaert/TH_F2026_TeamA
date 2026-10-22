@@ -3,9 +3,10 @@ extends CharacterBody2D
 @export var speed: int = 500
 @export var acceleration: int = 10
 @export var jump_speed: int = -speed * 2
+@export var gravity: int = speed * 5
 
 func handle_input() -> void:
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_speed
 		
 	var input_direction = Input.get_axis("left", "right")
@@ -15,6 +16,12 @@ func handle_input() -> void:
 	else:
 		velocity.x = move_toward(velocity.x, speed * input_direction, acceleration)
 
+
+func update_movement(delta: float) -> void:
+	velocity.y += gravity * delta
+
+
 func _physics_process(delta: float) -> void:
 	handle_input()
 	move_and_slide()
+	update_movement(delta)
