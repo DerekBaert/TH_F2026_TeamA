@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b4x5q0gadhler"]
+
+[ext_resource type="Texture2D" uid="uid://c6pn80qdeeafj" path="res://Placeholders/IMG_6200 (2).jpg" id="1_cshku"]
+
+[node name="Control" type="Control" unique_id=1024039238]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1792620640]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cshku")
+expand_mode = 1
+flip_h = true
+flip_v = true
