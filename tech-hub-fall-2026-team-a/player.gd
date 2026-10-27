@@ -2,8 +2,9 @@ extends CharacterBody2D
 
 @export var speed: int = 500
 @export var acceleration: int = 10
-@export var jump_speed: int = -speed * 2
+@export var jump_speed: int = -speed * 3
 @export var gravity: int = speed * 5
+@onready var animations: AnimatedSprite2D = $AnimatedSprite2D
 
 func handle_input() -> void:
 	if Input.is_action_just_pressed("jump") and is_on_floor():

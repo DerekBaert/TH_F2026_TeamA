@@ -1,20 +1,74 @@
 [gd_scene format=3 uid="uid://dvg6ya2opax1e"]
 
 [ext_resource type="Script" uid="uid://dk6n1ug6r4mvw" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://cyu8igxinw455" path="res://Fall.png.png" id="2_dw050"]
+[ext_resource type="Texture2D" uid="uid://cdfhmp0saiou" path="res://Idle1-1.png.png" id="3_b26j0"]
+[ext_resource type="Texture2D" uid="uid://3vbw3jo3jwvp" path="res://Idle2-2.png.png" id="4_n7ghd"]
+[ext_resource type="Texture2D" uid="uid://blv8w5l67oux5" path="res://Idle3-3.png.png" id="5_nvl01"]
+[ext_resource type="Texture2D" uid="uid://dsbr4ahl3sqrl" path="res://Jump.png.png" id="6_ivps1"]
+[ext_resource type="Texture2D" uid="uid://cj6yclp3m2yus" path="res://Walking1-1.png.png" id="7_urp6f"]
+[ext_resource type="Texture2D" uid="uid://ckvwt0sjwdsnx" path="res://Walking2-2.png.png" id="8_bwjto"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dw050"]
+size = Vector2(20.156754, 15.845525)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5rr0d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dw050")
+}],
+"loop": 1,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_b26j0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n7ghd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nvl01")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ivps1")
+}],
+"loop": 1,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_urp6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bwjto")
+}],
+"loop": 1,
+"name": &"Walking",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D" unique_id=942199509]
 script = ExtResource("1_4flbx")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1044005339]
-offset_left = -20.0
-offset_top = -30.0
-offset_right = 20.0
-offset_bottom = 30.0
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1930519715]
-scale = Vector2(2, 3)
-shape = SubResource("RectangleShape2D_0xm2m")
+position = Vector2(18.500006, 12.506131)
+rotation = -1.5707963
+scale = Vector2(6.3012266, -9.908161)
+shape = SubResource("RectangleShape2D_dw050")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=200276173]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=801270730]
+sprite_frames = SubResource("SpriteFrames_5rr0d")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.29592463

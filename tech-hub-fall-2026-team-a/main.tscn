@@ -6,7 +6,7 @@
 [node name="Main" type="Node2D" unique_id=779583030]
 
 [node name="Platform" parent="." unique_id=1230808869 instance=ExtResource("1_ig7tw")]
-position = Vector2(1420, 850)
+position = Vector2(1420, 750)
 scale = Vector2(15, 3)
 
 [node name="Platform2" parent="." unique_id=766229505 instance=ExtResource("1_ig7tw")]
@@ -14,12 +14,12 @@ position = Vector2(960, 1300)
 scale = Vector2(100, 30)
 
 [node name="Platform3" parent="." unique_id=1688962478 instance=ExtResource("1_ig7tw")]
-position = Vector2(500, 850)
+position = Vector2(500, 750)
 scale = Vector2(15, 3)
 
 [node name="Platform4" parent="." unique_id=183026001 instance=ExtResource("1_ig7tw")]
-position = Vector2(960, 750)
+position = Vector2(960, 500)
 scale = Vector2(20, 3)
 
 [node name="Player" parent="." unique_id=942199509 instance=ExtResource("2_0xm2m")]
-position = Vector2(960, 969)
+position = Vector2(962, 923)
