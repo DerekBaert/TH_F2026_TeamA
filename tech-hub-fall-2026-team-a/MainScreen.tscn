@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b4x5q0gadhler"]
 
 [ext_resource type="Texture2D" uid="uid://c6pn80qdeeafj" path="res://Placeholders/IMG_6200 (2).jpg" id="1_cshku"]
+[ext_resource type="Texture2D" uid="uid://bm5o2adfcaxgo" path="res://Ryan the Raccoon.png" id="2_i8u74"]
 
 [node name="Control" type="Control" unique_id=1024039238]
 layout_mode = 3
@@ -21,3 +22,8 @@ texture = ExtResource("1_cshku")
 expand_mode = 1
 flip_h = true
 flip_v = true
+
+[node name="RyanTheRaccoon" type="Sprite2D" parent="." unique_id=1876532791]
+position = Vector2(1721, -75)
+scale = Vector2(0.15416665, 0.15416667)
+texture = ExtResource("2_i8u74")
