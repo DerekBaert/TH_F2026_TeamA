@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cvd3n730ngyof"]
+
+[ext_resource type="Script" uid="uid://b8li1j7xkp040" path="res://Lives.gd" id="1_2vtla"]
+[ext_resource type="Texture2D" uid="uid://bvcy7henxq16" path="res://Placeholders/Trash_Can.png" id="2_pm3ta"]
+[ext_resource type="Texture2D" uid="uid://cd7yba80cwua2" path="res://Placeholders/Trashcan 2.png" id="3_k8gs6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ryflk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pm3ta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_k8gs6")
+}],
+"loop": 1,
+"name": &"Live Lost",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control" unique_id=1821822899]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2vtla")
+Lives = 3
+
+[node name="Live1" type="AnimatedSprite2D" parent="." unique_id=2942053]
+position = Vector2(41, 55)
+sprite_frames = SubResource("SpriteFrames_ryflk")
+animation = &"Live Lost"
+
+[node name="Live2" type="AnimatedSprite2D" parent="." unique_id=321935783]
+position = Vector2(156, 56)
+sprite_frames = SubResource("SpriteFrames_ryflk")
+animation = &"Live Lost"
+
+[node name="Live3" type="AnimatedSprite2D" parent="." unique_id=1462458578]
+position = Vector2(270, 57)
+scale = Vector2(0.9977823, 0.99134743)
+sprite_frames = SubResource("SpriteFrames_ryflk")
+animation = &"Live Lost"
+
+[node name="Live4" type="AnimatedSprite2D" parent="." unique_id=1706845662]
+position = Vector2(381, 57)
+sprite_frames = SubResource("SpriteFrames_ryflk")
+animation = &"Live Lost"
