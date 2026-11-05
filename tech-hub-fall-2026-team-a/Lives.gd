@@ -1,15 +1,22 @@
 extends Control
-@export var Lives :=4
-
+@export var Lives :=4 
+@onready var live1 = $Live1
+@onready var live2 = $Live2
+@onready var live3 = $Live3
+@onready var live4 = $Live4
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
+	if Input.is_action_just_pressed("ui_accept"):
+		Lives -= 1
+		print(Lives)
 	match Lives:
 		3:
-			$Live4.hide()
+			live4.play("LiveLost")
 		2:
-			$Live3.hide()
+			live3.play("LiveLost")
 		1:
-			$Live2.hide()
+			live2.play("LiveLost")
 		0:
-			$Live1.hide()
+			live1.play("LiveLost")
 	pass

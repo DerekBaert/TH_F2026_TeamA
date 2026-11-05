@@ -13,38 +13,33 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_k8gs6")
 }],
-"loop": 1,
-"name": &"Live Lost",
+"loop": 0,
+"name": &"LiveLost",
 "speed": 5.0
 }]
 
-[node name="Control" type="Control" unique_id=1821822899]
+[node name="LivesBar" type="Control" unique_id=1821822899]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
 script = ExtResource("1_2vtla")
-Lives = 3
 
 [node name="Live1" type="AnimatedSprite2D" parent="." unique_id=2942053]
 position = Vector2(41, 55)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"Live Lost"
+animation = &"LiveLost"
 
 [node name="Live2" type="AnimatedSprite2D" parent="." unique_id=321935783]
 position = Vector2(156, 56)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"Live Lost"
+animation = &"LiveLost"
 
 [node name="Live3" type="AnimatedSprite2D" parent="." unique_id=1462458578]
 position = Vector2(270, 57)
 scale = Vector2(0.9977823, 0.99134743)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"Live Lost"
+animation = &"LiveLost"
 
 [node name="Live4" type="AnimatedSprite2D" parent="." unique_id=1706845662]
 position = Vector2(381, 57)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"Live Lost"
+animation = &"LiveLost"

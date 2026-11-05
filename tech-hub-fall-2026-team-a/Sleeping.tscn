@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dy0q741swlkyw"]
+
+[ext_resource type="Script" uid="uid://cwn61l0dqx26w" path="res://GameplayScript.gd" id="1_erorw"]
+[ext_resource type="Texture2D" uid="uid://dvnkvlcqru65g" path="res://Placeholders/Screenshot 2026-11-05 104055.png" id="1_x825f"]
+[ext_resource type="PackedScene" uid="uid://cvd3n730ngyof" path="res://LivesBar.tscn" id="2_kthky"]
+
+[sub_resource type="Animation" id="Animation_kthky"]
+resource_name = "Transition"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_erorw"]
+_data = {
+&"Transition": SubResource("Animation_kthky")
+}
+
+[node name="Sleeping" type="Control" unique_id=407694467]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_erorw")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=382703642]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_x825f")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=32261322]
+libraries/ = SubResource("AnimationLibrary_erorw")
+
+[node name="LivesBar" parent="." unique_id=1821822899 instance=ExtResource("2_kthky")]
+layout_mode = 0
+offset_left = 756.0
+offset_top = 829.0
+offset_right = 756.0
+offset_bottom = 829.0

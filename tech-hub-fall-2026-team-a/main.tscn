@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://tqb1lfenblhy" path="res://platform.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://dvg6ya2opax1e" path="res://player.tscn" id="2_0xm2m"]
 
-[node name="Main" type="Node2D" unique_id=779583030]
+[node name="Platformer" type="Node2D" unique_id=779583030]
 
 [node name="Platform" parent="." unique_id=1230808869 instance=ExtResource("1_ig7tw")]
 position = Vector2(1420, 750)
