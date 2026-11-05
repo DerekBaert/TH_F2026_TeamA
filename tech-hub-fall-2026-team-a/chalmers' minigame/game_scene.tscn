@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cf0dvdjnc853s"]
+
+[ext_resource type="PackedScene" uid="uid://bso7lejyybem4" path="res://land.tscn" id="1_po0ka"]
+[ext_resource type="PackedScene" uid="uid://beoux0hpw1f35" path="res://tire_raccoon.tscn" id="2_v1wow"]
+[ext_resource type="PackedScene" uid="uid://da2v4ppaf14hc" path="res://victory.tscn" id="3_v1wow"]
+
+[node name="game scene" type="Node2D" unique_id=1588718868]
+
+[node name="Tire Raccoon" parent="." unique_id=794382885 instance=ExtResource("2_v1wow")]
+position = Vector2(78, 341)
+
+[node name="victory" parent="." unique_id=1287505344 instance=ExtResource("3_v1wow")]
+position = Vector2(2282, 292)
+
+[node name="Node2D" parent="." unique_id=430544565 instance=ExtResource("1_po0ka")]
+position = Vector2(-1, 433)
+
+[node name="Node2D2" parent="." unique_id=1516005651 instance=ExtResource("1_po0ka")]
+position = Vector2(649, 344)
+
+[node name="Node2D3" parent="." unique_id=1409504600 instance=ExtResource("1_po0ka")]
+position = Vector2(1226, 171)
+
+[node name="Node2D4" parent="." unique_id=383685961 instance=ExtResource("1_po0ka")]
+position = Vector2(2050, 344)
