@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bji8casij8s52"]
+
+[ext_resource type="Texture2D" uid="uid://b0y7wroeyrubt" path="res://Bed-1.png.png" id="1_xqjo8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7qckb"]
+size = Vector2(204, 71.75)
+
+[node name="Bed" type="StaticBody2D" unique_id=45186695]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2066937526]
+position = Vector2(10, 129.75)
+scale = Vector2(2, 2)
+shape = SubResource("RectangleShape2D_7qckb")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1137082900]
+offset_left = -192.0
+offset_top = 59.0
+offset_right = 213.0
+offset_bottom = 200.0
+color = Color(1, 0, 0, 1)
+
+[node name="Bed1_png" type="Sprite2D" parent="." unique_id=1943902413]
+position = Vector2(10, -1)
+texture = ExtResource("1_xqjo8")

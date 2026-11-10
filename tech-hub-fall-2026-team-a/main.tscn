@@ -2,11 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://tqb1lfenblhy" path="res://platform.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://dvg6ya2opax1e" path="res://player.tscn" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://d2ox480u0vtkk" path="res://Floor.png" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bji8casij8s52" path="res://bed.tscn" id="4_1bvp3"]
 
 [node name="Platformer" type="Node2D" unique_id=779583030]
 
 [node name="Platform" parent="." unique_id=1230808869 instance=ExtResource("1_ig7tw")]
-position = Vector2(1420, 750)
+position = Vector2(500, 259)
 scale = Vector2(15, 3)
 
 [node name="Platform2" parent="." unique_id=766229505 instance=ExtResource("1_ig7tw")]
@@ -23,3 +25,17 @@ scale = Vector2(20, 3)
 
 [node name="Player" parent="." unique_id=942199509 instance=ExtResource("2_0xm2m")]
 position = Vector2(962, 923)
+
+[node name="Floor" type="Sprite2D" parent="." unique_id=1950207240]
+position = Vector2(200, 970)
+scale = Vector2(3, 2.5)
+texture = ExtResource("3_h2yge")
+
+[node name="Floor2" type="Sprite2D" parent="." unique_id=531195055]
+position = Vector2(1725, 970)
+scale = Vector2(3, 2.5)
+texture = ExtResource("3_h2yge")
+
+[node name="Bed" parent="." unique_id=45186695 instance=ExtResource("4_1bvp3")]
+position = Vector2(1500, 700)
+scale = Vector2(1.5, 1.5)
