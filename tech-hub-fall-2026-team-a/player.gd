@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-@export var speed: int = 500
-@export var acceleration: int = 20
+@export var speed: int = 700
+@export var acceleration: int = 30
 @export var jump_speed: int = -speed * 3
 @export var gravity: int = speed * 6
 @onready var animations: AnimatedSprite2D = $AnimatedSprite2D

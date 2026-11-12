@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c728au7bmsurr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7qckb"]
+
+[node name="Barrier" type="StaticBody2D" unique_id=694763354]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1189969216]
+shape = SubResource("RectangleShape2D_7qckb")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=807051761]
+offset_left = -10.000001
+offset_top = -10.0
+offset_right = 30.0
+offset_bottom = 30.0
+scale = Vector2(0.4980888, 0.49903485)

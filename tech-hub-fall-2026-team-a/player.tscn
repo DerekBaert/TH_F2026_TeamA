@@ -65,10 +65,8 @@ rotation = -1.5707963
 scale = Vector2(6.3012266, -9.908161)
 shape = SubResource("RectangleShape2D_dw050")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=200276173]
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=801270730]
 sprite_frames = SubResource("SpriteFrames_5rr0d")
-animation = &"Idle"
+animation = &"Walking"
 autoplay = "Idle"
-frame_progress = 0.29592463
+frame_progress = 0.29612088

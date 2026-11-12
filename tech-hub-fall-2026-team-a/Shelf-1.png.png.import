@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uycby8j18jc0"
-path="res://.godot/imported/Bed-1.png.png-0feaac34e58573681100391ef7a0eac5.ctex"
+uid="uid://bcan41yv20cvy"
+path="res://.godot/imported/Shelf-1.png.png-b77566b3c545617c80ea4b486a8e47f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CHALMERS' MINIGAME #4/Bed-1.png.png"
-dest_files=["res://.godot/imported/Bed-1.png.png-0feaac34e58573681100391ef7a0eac5.ctex"]
+source_file="res://Shelf-1.png.png"
+dest_files=["res://.godot/imported/Shelf-1.png.png-b77566b3c545617c80ea4b486a8e47f1.ctex"]
 
 [params]
 
