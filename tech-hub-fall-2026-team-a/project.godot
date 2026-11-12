@@ -14,6 +14,10 @@ config/name="TechHub_Fall2026_TeamA"
 run/main_scene="uid://b4x5q0gadhler"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
+[autoload]
+
+Var="*uid://dwe5ighl2j17b"
+
 [display]
 
 window/size/viewport_width=1920

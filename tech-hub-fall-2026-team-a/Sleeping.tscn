@@ -36,7 +36,7 @@ libraries/ = SubResource("AnimationLibrary_erorw")
 
 [node name="LivesBar" parent="." unique_id=1821822899 instance=ExtResource("2_kthky")]
 layout_mode = 0
-offset_left = 756.0
-offset_top = 829.0
-offset_right = 756.0
-offset_bottom = 829.0
+offset_left = 733.0
+offset_top = 820.0
+offset_right = 733.0
+offset_bottom = 820.0
