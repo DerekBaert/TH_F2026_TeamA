@@ -1,21 +1,89 @@
 [gd_scene format=3 uid="uid://cvd3n730ngyof"]
 
 [ext_resource type="Script" uid="uid://b8li1j7xkp040" path="res://Lives.gd" id="1_2vtla"]
-[ext_resource type="Texture2D" uid="uid://bvcy7henxq16" path="res://Placeholders/Trash_Can.png" id="2_pm3ta"]
-[ext_resource type="Texture2D" uid="uid://cd7yba80cwua2" path="res://Placeholders/Trashcan 2.png" id="3_k8gs6"]
+[ext_resource type="Texture2D" uid="uid://dawtq7wtw7txh" path="res://life/Image_FBD91DCB-6936-476A-BD6A-8E4C348E7EA1.png" id="2_678wi"]
+[ext_resource type="Texture2D" uid="uid://d3c0rcj57l240" path="res://life/Image_B09091D2-C412-4B75-BFA9-0D05F696386A.png" id="3_iqdf1"]
+[ext_resource type="Texture2D" uid="uid://b05xc4pob8sf3" path="res://life/Image_97CE202F-C2F1-422A-A562-464A24325011.png" id="4_pc6n0"]
+[ext_resource type="Texture2D" uid="uid://cwa0dieygu8yy" path="res://life/Image_2EBFB8FA-0C88-4C77-A080-6FEAD8D3A0ED.png" id="5_u6ujf"]
+[ext_resource type="Texture2D" uid="uid://t18l2a10gsnt" path="res://life/Image_2ECE96F2-FF67-4E59-B36F-379C70FA0929.png" id="6_s255u"]
+[ext_resource type="Texture2D" uid="uid://b4vh6gg0t2ssl" path="res://life/Image_39646A0C-07C0-4808-BE40-9D6E86749553.png" id="7_wuqnf"]
+[ext_resource type="Texture2D" uid="uid://c1aew4e0cp7s2" path="res://life/Image_F3EBB278-62F0-405F-AE83-615AD730CF4A.png" id="8_wn77m"]
+[ext_resource type="Texture2D" uid="uid://df5thk0yikcy2" path="res://life/Image_EA08162B-E2FB-4852-8DB7-62A56AB0364C.png" id="9_xvw7s"]
+[ext_resource type="Texture2D" uid="uid://d170cj7v1oacv" path="res://life/Image_BA1E14C6-8F5A-4F39-8D36-EDC3219D9FE2.png" id="10_f3pff"]
+[ext_resource type="Texture2D" uid="uid://djcrgihmovwgu" path="res://life/Image_A7BD48FA-D5A9-42D4-8FCC-526BF098716A.png" id="11_aqqpd"]
+[ext_resource type="Texture2D" uid="uid://cj5qmb4djvu4e" path="res://life/Image_C14CEE7A-47D1-47F1-AEB1-CC298349D517.png" id="12_drpaq"]
+[ext_resource type="Texture2D" uid="uid://bh4kyq4n4au0u" path="res://life/Image_8D3AB225-29EA-42E0-B1CA-11FF1536E9F3.png" id="13_ux3nr"]
+[ext_resource type="Texture2D" uid="uid://q7i0ygrsdftq" path="res://life/Image_F3420114-6F2B-4D18-A009-5E7E333A451D.png" id="14_8c4rc"]
+[ext_resource type="Texture2D" uid="uid://dwnbvxw20w66g" path="res://life/Image_0D69E8E8-A794-4E23-BBC3-C32BF7C8BDC9.png" id="15_jr1lr"]
+[ext_resource type="Texture2D" uid="uid://dw3tos8a1pvdx" path="res://life/Image_49DF8DFF-E59C-4DF3-A0AE-ED669BE2487D.png" id="16_4mjeq"]
+[ext_resource type="Texture2D" uid="uid://buwwutu2lrepm" path="res://life/Image_E49224EC-8F32-4C3B-9C28-4FB58A85D576.png" id="17_ne7wb"]
+[ext_resource type="Texture2D" uid="uid://5x12g5nkomrd" path="res://life/Image_9B778182-D89D-4BEB-8690-8CE049629C4B.png" id="18_wvqu5"]
+[ext_resource type="Texture2D" uid="uid://cg85fko4td7vv" path="res://life/Image_E608D1AD-7440-4A46-9C62-F2376A155AD1.png" id="19_6jx7c"]
+[ext_resource type="Texture2D" uid="uid://dlfl2wu122cre" path="res://life/Image_971B6A98-0B86-4FC6-9BA4-CD78BF621BA4.png" id="20_ksekw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ryflk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_pm3ta")
+"texture": ExtResource("2_678wi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_k8gs6")
+"texture": ExtResource("3_iqdf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pc6n0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u6ujf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s255u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wuqnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wn77m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xvw7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_f3pff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_aqqpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_drpaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ux3nr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8c4rc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jr1lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4mjeq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ne7wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wvqu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6jx7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ksekw")
 }],
-"loop": 0,
-"name": &"LiveLost",
-"speed": 5.0
+"loop": 1,
+"name": &"dead",
+"speed": 12.0
 }]
 
 [node name="LivesBar" type="Control" unique_id=1821822899]
@@ -24,22 +92,31 @@ anchors_preset = 0
 script = ExtResource("1_2vtla")
 
 [node name="Live1" type="AnimatedSprite2D" parent="." unique_id=2942053]
-position = Vector2(41, 55)
+position = Vector2(299, 385)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"LiveLost"
+animation = &"dead"
+frame = 7
+frame_progress = 0.36708027
 
 [node name="Live2" type="AnimatedSprite2D" parent="." unique_id=321935783]
-position = Vector2(156, 56)
+position = Vector2(712, 393)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"LiveLost"
+animation = &"dead"
+frame = 7
+frame_progress = 0.46474913
 
 [node name="Live3" type="AnimatedSprite2D" parent="." unique_id=1462458578]
-position = Vector2(270, 57)
-scale = Vector2(0.9977823, 0.99134743)
+position = Vector2(1157, 394)
+scale = Vector2(0.5, 0.496)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"LiveLost"
+animation = &"dead"
 
 [node name="Live4" type="AnimatedSprite2D" parent="." unique_id=1706845662]
-position = Vector2(381, 57)
+position = Vector2(1566, 380)
+scale = Vector2(0.5, 0.5021186)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"LiveLost"
+animation = &"dead"
+frame = 6
+frame_progress = 0.84620553
