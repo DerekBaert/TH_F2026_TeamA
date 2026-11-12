@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://dl0p7aljxy6hc"]
+
+[ext_resource type="Texture2D" uid="uid://ubbf3xllj4ax" path="res://Image_FC5E930E-73AB-43BA-9B91-C8FD1BF47EBC.png" id="1_t8ltx"]
+[ext_resource type="PackedScene" uid="uid://tqb1lfenblhy" path="res://platform.tscn" id="2_7r3nf"]
+[ext_resource type="PackedScene" uid="uid://dvg6ya2opax1e" path="res://player.tscn" id="3_6ryk2"]
+[ext_resource type="Texture2D" uid="uid://d2ox480u0vtkk" path="res://Floor.png" id="4_alten"]
+[ext_resource type="PackedScene" uid="uid://bji8casij8s52" path="res://bed.tscn" id="5_0ckj0"]
+[ext_resource type="Texture2D" uid="uid://bcan41yv20cvy" path="res://Shelf-1.png.png" id="6_2w3ym"]
+
+[node name="Platformer" type="Node2D" unique_id=779583030]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=845475726]
+position = Vector2(400, 245)
+scale = Vector2(1, 1.4931371)
+texture = ExtResource("1_t8ltx")
+
+[node name="Background" type="Sprite2D" parent="Background" unique_id=25511660]
+position = Vector2(1130, 0.9174466)
+scale = Vector2(1, 1.0024556)
+texture = ExtResource("1_t8ltx")
+
+[node name="Platform" parent="." unique_id=1230808869 instance=ExtResource("2_7r3nf")]
+position = Vector2(308, 473)
+scale = Vector2(14, 2)
+
+[node name="Platform2" parent="." unique_id=766229505 instance=ExtResource("2_7r3nf")]
+position = Vector2(960, 1300)
+scale = Vector2(200.48146, 29.87828)
+
+[node name="Platform3" parent="." unique_id=1688962478 instance=ExtResource("2_7r3nf")]
+position = Vector2(843, 756)
+scale = Vector2(14, 2)
+
+[node name="Platform4" parent="." unique_id=183026001 instance=ExtResource("2_7r3nf")]
+position = Vector2(1252, 274.00003)
+scale = Vector2(14, 2)
+
+[node name="Player" parent="." unique_id=942199509 instance=ExtResource("3_6ryk2")]
+position = Vector2(962, 923)
+
+[node name="Floor" type="Sprite2D" parent="." unique_id=1950207240]
+position = Vector2(200, 970)
+scale = Vector2(3, 2.5)
+texture = ExtResource("4_alten")
+
+[node name="Floor2" type="Sprite2D" parent="." unique_id=531195055]
+position = Vector2(1725, 970)
+scale = Vector2(3, 2.5)
+texture = ExtResource("4_alten")
+
+[node name="Bed" parent="." unique_id=45186695 instance=ExtResource("5_0ckj0")]
+position = Vector2(2117, 100)
+scale = Vector2(1.5, 1.5)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=766150363]
+position = Vector2(1120, 500)
+scale = Vector2(3, 2.5)
+zoom = Vector2(0.7, 0.7)
+
+[node name="Platform5" parent="." unique_id=792226513 instance=ExtResource("2_7r3nf")]
+position = Vector2(2070, 700)
+scale = Vector2(42.23999, 30)
+
+[node name="Floor3" type="Sprite2D" parent="." unique_id=1211021479]
+position = Vector2(2320, 360)
+scale = Vector2(2.6490014, 2.5390623)
+texture = ExtResource("4_alten")
+
+[node name="Platform6" parent="." unique_id=612205199 instance=ExtResource("2_7r3nf")]
+position = Vector2(-675, 6)
+scale = Vector2(10, 100)
+
+[node name="Platform7" parent="." unique_id=1534892962 instance=ExtResource("2_7r3nf")]
+position = Vector2(2600, 6)
+scale = Vector2(10, 100)
+
+[node name="Platform8" parent="." unique_id=259381705 instance=ExtResource("2_7r3nf")]
+position = Vector2(950, -630)
+rotation = 1.5707964
+scale = Vector2(10, 200)
+
+[node name="Shelf1_png" type="Sprite2D" parent="." unique_id=365671778]
+position = Vector2(307, 492)
+texture = ExtResource("6_2w3ym")
+
+[node name="Shelf1_png3" type="Sprite2D" parent="." unique_id=595143472]
+position = Vector2(1252, 294)
+texture = ExtResource("6_2w3ym")
+
+[node name="Shelf1_png2" type="Sprite2D" parent="." unique_id=64930261]
+position = Vector2(843, 775)
+texture = ExtResource("6_2w3ym")
