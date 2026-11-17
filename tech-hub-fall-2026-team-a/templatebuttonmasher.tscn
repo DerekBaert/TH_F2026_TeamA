@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bd5wpwpvg6w8l"]
+
+[ext_resource type="Script" uid="uid://bi2orb3yvjbil" path="res://templatebuttonmasher.gd" id="1_jhfnf"]
+
+[node name="templatebuttonmasher" type="Node" unique_id=577358868]
+script = ExtResource("1_jhfnf")
+
+[node name="Button" type="Button" parent="." unique_id=1073055447]
+offset_left = 806.0
+offset_top = 823.0
+offset_right = 1080.0
+offset_bottom = 968.0
+theme_override_font_sizes/font_size = 100
+text = "PUSH"
+
+[node name="Label" type="Label" parent="." unique_id=417505350]
+offset_top = -1.0
+offset_right = 377.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 100
+text = "Score: 1"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
