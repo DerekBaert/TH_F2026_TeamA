@@ -81,8 +81,8 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("20_ksekw")
 }],
-"loop": 1,
-"name": &"dead",
+"loop": 0,
+"name": &"LiveLost",
 "speed": 12.0
 }]
 
@@ -95,28 +95,22 @@ script = ExtResource("1_2vtla")
 position = Vector2(299, 385)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"dead"
-frame = 7
-frame_progress = 0.36708027
+animation = &"LiveLost"
 
 [node name="Live2" type="AnimatedSprite2D" parent="." unique_id=321935783]
 position = Vector2(712, 393)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"dead"
-frame = 7
-frame_progress = 0.46474913
+animation = &"LiveLost"
 
 [node name="Live3" type="AnimatedSprite2D" parent="." unique_id=1462458578]
 position = Vector2(1157, 394)
 scale = Vector2(0.5, 0.496)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"dead"
+animation = &"LiveLost"
 
 [node name="Live4" type="AnimatedSprite2D" parent="." unique_id=1706845662]
 position = Vector2(1566, 380)
 scale = Vector2(0.5, 0.5021186)
 sprite_frames = SubResource("SpriteFrames_ryflk")
-animation = &"dead"
-frame = 6
-frame_progress = 0.84620553
+animation = &"LiveLost"
