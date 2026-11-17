@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://nq7mwxd7ju0c"]
 
 [ext_resource type="Script" uid="uid://cvdy6hugt6p42" path="res://control.gd" id="1_0fbet"]
+[ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="2_62e2m"]
 
 [node name="Control" type="Control" unique_id=383932915]
 layout_mode = 3
@@ -19,21 +20,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="." unique_id=608468225]
-layout_mode = 0
-offset_left = 844.0
-offset_top = 752.0
-offset_right = 1118.0
-offset_bottom = 897.0
-theme_override_font_sizes/font_size = 100
-text = "PUSH"
-
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=342202280]
 layout_mode = 0
-offset_left = 29.0
-offset_top = 24.0
-offset_right = 410.0
-offset_bottom = 161.0
+offset_left = 226.0
+offset_top = 135.0
+offset_right = 607.0
+offset_bottom = 272.0
 
 [node name="Label" type="Label" parent="HBoxContainer" unique_id=1658204759]
 layout_mode = 2
@@ -46,4 +38,21 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "1"
 
+[node name="Button" type="Button" parent="." unique_id=608468225]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 752.0
+offset_right = 1118.0
+offset_bottom = 897.0
+theme_override_font_sizes/font_size = 100
+text = "PUSH"
+
+[node name="Timer" parent="." unique_id=1075798 instance=ExtResource("2_62e2m")]
+layout_mode = 1
+offset_left = 126.0
+offset_top = 895.0
+offset_right = 126.0
+offset_bottom = 895.0
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timerEnded" from="Timer" to="." method="_on_timer_timer_ended"]

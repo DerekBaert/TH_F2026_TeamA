@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://bb8qhshabx6m8" path="res://Numbers and Bomb/5.png" id="8_eqm1h"]
 [ext_resource type="Texture2D" uid="uid://bkphsnx1g15qp" path="res://Numbers and Bomb/6.png" id="9_f7no2"]
 [ext_resource type="Texture2D" uid="uid://cb1sdcpdsooqw" path="res://Numbers and Bomb/7.png" id="10_3qjk2"]
-[ext_resource type="Texture2D" uid="uid://hicl4lyser82" path="res://Numbers and Bomb/8.png" id="11_ws6qj"]
 [ext_resource type="Texture2D" uid="uid://taoum5a37u7i" path="res://Numbers and Bomb/9.png" id="12_82e5d"]
+[ext_resource type="Texture2D" uid="uid://cht31jafus128" path="res://Numbers and Bomb/8 (2).png" id="12_jln7w"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ryflk"]
 animations = [{
@@ -56,7 +56,7 @@ animations = [{
 "texture": ExtResource("10_3qjk2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_ws6qj")
+"texture": ExtResource("12_jln7w")
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_82e5d")
