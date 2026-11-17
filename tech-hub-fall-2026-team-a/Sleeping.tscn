@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dy0q741swlkyw"]
 
 [ext_resource type="Script" uid="uid://cwn61l0dqx26w" path="res://GameplayScript.gd" id="1_erorw"]
-[ext_resource type="Texture2D" uid="uid://dvnkvlcqru65g" path="res://Placeholders/Screenshot 2026-11-05 104055.png" id="1_x825f"]
-[ext_resource type="PackedScene" uid="uid://cvd3n730ngyof" path="res://LivesBar.tscn" id="2_kthky"]
+[ext_resource type="Texture2D" uid="uid://dujgjs4xpt703" path="res://UI/Sleeping.png" id="2_erorw"]
+[ext_resource type="PackedScene" uid="uid://cvd3n730ngyof" path="res://UI/LivesBar.tscn" id="2_kthky"]
 
 [sub_resource type="Animation" id="Animation_kthky"]
 resource_name = "Transition"
@@ -28,8 +28,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_x825f")
-expand_mode = 1
+texture = ExtResource("2_erorw")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=32261322]
 libraries/ = SubResource("AnimationLibrary_erorw")

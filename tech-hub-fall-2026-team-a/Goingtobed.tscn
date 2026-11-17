@@ -1,13 +1,16 @@
 [gd_scene format=3 uid="uid://c4aak4mih13c3"]
 
 [ext_resource type="Texture2D" uid="uid://ubbf3xllj4ax" path="res://Image_FC5E930E-73AB-43BA-9B91-C8FD1BF47EBC.png" id="1_56lom"]
+[ext_resource type="Script" uid="uid://eyykomdkdcus" path="res://goingtobed.gd" id="1_dwhhm"]
 [ext_resource type="PackedScene" uid="uid://tqb1lfenblhy" path="res://platform.tscn" id="2_wbv6k"]
 [ext_resource type="PackedScene" uid="uid://dvg6ya2opax1e" path="res://player.tscn" id="3_dwhhm"]
 [ext_resource type="Texture2D" uid="uid://d2ox480u0vtkk" path="res://Floor.png" id="4_t5vfk"]
 [ext_resource type="PackedScene" uid="uid://bji8casij8s52" path="res://bed.tscn" id="5_t2u54"]
 [ext_resource type="Texture2D" uid="uid://bcan41yv20cvy" path="res://Shelf-1.png.png" id="6_nisqu"]
+[ext_resource type="PackedScene" uid="uid://bppcclo2qa3ds" path="res://UI/outscreen.tscn" id="9_t5vfk"]
 
 [node name="Platformer" type="Node2D" unique_id=779583030]
+script = ExtResource("1_dwhhm")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=845475726]
 position = Vector2(400, 245)
@@ -90,3 +93,5 @@ texture = ExtResource("6_nisqu")
 [node name="Shelf1_png2" type="Sprite2D" parent="." unique_id=64930261]
 position = Vector2(843, 775)
 texture = ExtResource("6_nisqu")
+
+[node name="Outscreen" parent="." unique_id=1995036047 instance=ExtResource("9_t5vfk")]

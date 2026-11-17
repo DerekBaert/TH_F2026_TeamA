@@ -76,7 +76,7 @@ grow_vertical = 2
 script = ExtResource("1_qdhxh")
 
 [node name="Bomb" type="AnimatedSprite2D" parent="." unique_id=1392113976]
-position = Vector2(116, 913)
+position = Vector2(16, -6)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
 animation = &"Bomb"
