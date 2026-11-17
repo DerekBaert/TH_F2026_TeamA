@@ -6,8 +6,8 @@ var frame = seconds
 signal timerEnded
 func _process(delta: float) -> void:
 	counter.frame = seconds
-	if seconds == 0:
-		timerEnded.emit
+	if seconds < 0:
+		timerEnded.emit()
 	pass
 
 func _on_second_timer_timeout() -> void:

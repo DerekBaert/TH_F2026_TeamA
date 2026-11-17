@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 [autoload]
 
 Var="*uid://dwe5ighl2j17b"
+Func="*uid://b7p1u23qtii4y"
 
 [display]
 

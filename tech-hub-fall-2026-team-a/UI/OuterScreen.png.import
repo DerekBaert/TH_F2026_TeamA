@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hicl4lyser82"
-path="res://.godot/imported/8.png-82082b136b05bd2ecd2b8addcf74ce9a.ctex"
+uid="uid://10t2rawwe2fm"
+path="res://.godot/imported/OuterScreen.png-e977cf93b44059921e782f358bf6b2f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Numbers and Bomb/8.png"
-dest_files=["res://.godot/imported/8.png-82082b136b05bd2ecd2b8addcf74ce9a.ctex"]
+source_file="res://UI/OuterScreen.png"
+dest_files=["res://.godot/imported/OuterScreen.png-e977cf93b44059921e782f358bf6b2f4.ctex"]
 
 [params]
 

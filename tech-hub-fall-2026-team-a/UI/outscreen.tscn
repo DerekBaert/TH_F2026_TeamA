@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bppcclo2qa3ds"]
+
+[ext_resource type="Texture2D" uid="uid://10t2rawwe2fm" path="res://UI/OuterScreen.png" id="1_l7ans"]
+[ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="2_pdwnv"]
+
+[node name="Outscreen" type="CanvasLayer" unique_id=409512992]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=43104776]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_l7ans")
+
+[node name="Timer" parent="." unique_id=1075798 instance=ExtResource("2_pdwnv")]
+offset_left = 89.0
+offset_top = 927.0
+offset_right = 89.0
+offset_bottom = 927.0
