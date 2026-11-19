@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://ccya6kn8b0jmr"]
+
+[ext_resource type="Script" uid="uid://cgihtcso8yyvc" path="res://Dodge game folder by chalmers/mob.gd" id="1_nokgg"]
+[ext_resource type="Texture2D" uid="uid://b4y6rar036xtf" path="res://Dodge game folder by chalmers/garbage.jpg" id="2_q8br1"]
+[ext_resource type="Texture2D" uid="uid://dg1w6b5skxx6f" path="res://Dodge game folder by chalmers/images (3).jpg" id="3_klsau"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4y2s6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_q8br1")
+}],
+"loop": 1,
+"name": &"swim",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_klsau")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(188, 181.33334)
+
+[sub_resource type="Curve2D" id="Curve2D_nokgg"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -523, 0, 0, 0, 0, 0, 660, -8)
+}
+point_count = 2
+
+[node name="Mob" type="RigidBody2D" unique_id=323349407 groups=["Trash"]]
+collision_mask = 0
+script = ExtResource("1_nokgg")
+metadata/_edit_vertical_guides_ = [-182.0]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1490883678]
+position = Vector2(9.536743e-07, 1)
+rotation = -0.013106704
+scale = Vector2(0.31567875, 0.28130773)
+sprite_frames = SubResource("SpriteFrames_4y2s6")
+animation = &"swim"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=309136221]
+position = Vector2(1.4999981, 11.000003)
+scale = Vector2(0.75, 0.75)
+shape = SubResource("RectangleShape2D_onrkg")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1734421362]
+visible = false
+position = Vector2(160, 132)
+rect = Rect2(-245, -221, 162.52821, 160)
+
+[node name="MobPath" type="Path2D" parent="." unique_id=1097798503]
+curve = SubResource("Curve2D_nokgg")
+
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath" unique_id=1486892471]
+position = Vector2(-523, 0)
+rotation = -0.006762365
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="tree_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_tree_entered"]

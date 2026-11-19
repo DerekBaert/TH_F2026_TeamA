@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://bsrow36s7p6q7"]
+
+[ext_resource type="PackedScene" uid="uid://bso7lejyybem4" path="res://land.tscn" id="1_0e48y"]
+[ext_resource type="PackedScene" uid="uid://ovlx30wpjsle" path="res://player.tscn" id="2_epypp"]
+[ext_resource type="PackedScene" uid="uid://ccya6kn8b0jmr" path="res://mob.tscn" id="4_0hol4"]
+
+[sub_resource type="GDScript" id="GDScript_epypp"]
+script/source = "extends Node
+
+@export var mob_scene: PackedScene
+var score
+
+
+func game_over() -> void: ### <SIGNAL> Connect with \"hit\" signal of Player scene
+	$ScoreTimer.stop()
+	$MobTimer.stop()
+	$HUD.show_game_over()
+	$Music.stop()
+	$DeathSound.play()
+	
+func _ready(): ### <SIGNAL> Connect with \"start_game\" signal of HUD scene
+	get_tree().call_group(\"mobs\", \"queue_free\")
+	score = 0
+	print(\"Game Started\")
+	
+
+	
+#func _on_mob_timer_timeout() -> void:  ### <SIGNAL> Connect with \"MobTimer\" signal
+	## Create a new instance of the Mob scene.
+	#print(\"mob spawn\")
+
+	# Choose a random location on Path2D.
+	#var mob_spawn_location = $MobPath/MobSpawnLocation
+	#mob_spawn_location.progress_ratio = randf()
+	#print(mob_spawn_location)
+
+	# Set the mob's position to the random location.
+	#position.x = mob_spawn_location
+
+	## Set the mob's direction perpendicular to the path direction.
+	#var direction = mob_spawn_location.rotation + PI / 2
+
+	## Add some randomness to the direction.
+	#direction += randf_range(-PI / 4, PI / 4)
+	#mob.rotation = direction
+
+	## Choose the velocity for the mob.
+	#var velocity = Vector2(randf_range(150.0, 250.0), 0.0)
+	#mob.linear_velocity = velocity.rotated(direction)
+
+	# Spawn the mob by adding it to the Main scene.
+	#add_child(mob)
+
+
+func _on_player_hit() -> void:
+	print(\"Player got hit\")
+"
+
+[node name="Main microgame" type="Node2D" unique_id=1186444040]
+position = Vector2(579, 339)
+script = SubResource("GDScript_epypp")
+
+[node name="Node2D" parent="." unique_id=430544565 instance=ExtResource("1_0e48y")]
+position = Vector2(-541, 277)
+
+[node name="Player" parent="." unique_id=588413158 instance=ExtResource("2_epypp")]
+position = Vector2(0, 34)
+scale = Vector2(0.3, 0.3)
+
+[node name="MobTimer" type="Timer" parent="." unique_id=74455349]
+
+[node name="Node2D2" parent="." unique_id=1085867642 instance=ExtResource("1_0e48y")]
+position = Vector2(-671, -551)
+rotation = 1.5707964
+
+[node name="Node2D3" parent="." unique_id=780543231 instance=ExtResource("1_0e48y")]
+position = Vector2(840, -566)
+rotation = 1.5707964
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=426400365]
+position = Vector2(54, -46)
+
+[node name="Mob" parent="." unique_id=323349407 instance=ExtResource("4_0hol4")]
+position = Vector2(-94, -358)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob2" parent="." unique_id=1764495173 instance=ExtResource("4_0hol4")]
+position = Vector2(-271, -351)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob3" parent="." unique_id=479433716 instance=ExtResource("4_0hol4")]
+position = Vector2(137, -358)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob4" parent="." unique_id=198716036 instance=ExtResource("4_0hol4")]
+position = Vector2(290, -352)
+collision_mask = 1
+
+[connection signal="hit" from="Player" to="." method="_on_player_hit"]
+[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

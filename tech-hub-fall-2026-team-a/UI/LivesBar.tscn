@@ -92,25 +92,25 @@ anchors_preset = 0
 script = ExtResource("1_2vtla")
 
 [node name="Live1" type="AnimatedSprite2D" parent="." unique_id=2942053]
-position = Vector2(299, 385)
+position = Vector2(178, 225)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
 animation = &"LiveLost"
 
 [node name="Live2" type="AnimatedSprite2D" parent="." unique_id=321935783]
-position = Vector2(712, 393)
+position = Vector2(586, 220)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
 animation = &"LiveLost"
 
 [node name="Live3" type="AnimatedSprite2D" parent="." unique_id=1462458578]
-position = Vector2(1157, 394)
-scale = Vector2(0.5, 0.496)
+position = Vector2(1039, 222)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
 animation = &"LiveLost"
 
 [node name="Live4" type="AnimatedSprite2D" parent="." unique_id=1706845662]
-position = Vector2(1566, 380)
-scale = Vector2(0.5, 0.5021186)
+position = Vector2(1487, 221)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
 animation = &"LiveLost"
