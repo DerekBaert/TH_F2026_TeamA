@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://d2ox480u0vtkk" path="res://Floor.png" id="4_t5vfk"]
 [ext_resource type="PackedScene" uid="uid://bji8casij8s52" path="res://bed.tscn" id="5_t2u54"]
 [ext_resource type="Texture2D" uid="uid://bcan41yv20cvy" path="res://Shelf-1.png.png" id="6_nisqu"]
-[ext_resource type="PackedScene" uid="uid://bppcclo2qa3ds" path="res://UI/outscreen.tscn" id="9_t5vfk"]
+[ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="9_t2u54"]
 
 [node name="Platformer" type="Node2D" unique_id=779583030]
 script = ExtResource("1_dwhhm")
@@ -94,4 +94,10 @@ texture = ExtResource("6_nisqu")
 position = Vector2(843, 775)
 texture = ExtResource("6_nisqu")
 
-[node name="Outscreen" parent="." unique_id=1995036047 instance=ExtResource("9_t5vfk")]
+[node name="Timer" parent="." unique_id=1075798 instance=ExtResource("9_t2u54")]
+offset_left = -132.0
+offset_top = 1107.0
+offset_right = -132.0
+offset_bottom = 1107.0
+
+[connection signal="timerEnded" from="Timer" to="." method="TimerEnded"]

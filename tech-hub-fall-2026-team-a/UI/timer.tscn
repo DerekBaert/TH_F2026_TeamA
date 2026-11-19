@@ -1,26 +1,66 @@
 [gd_scene format=3 uid="uid://fisx5v5gi0k7"]
 
 [ext_resource type="Script" uid="uid://dvkaoafi0ruo3" path="res://timer.gd" id="1_qdhxh"]
-[ext_resource type="Texture2D" uid="uid://b3wlwi5nojbgx" path="res://Numbers and Bomb/Bomb.png" id="2_rokg3"]
-[ext_resource type="Texture2D" uid="uid://dtkaa8w0lly7" path="res://Placeholders/New Piskel-1.png (9).png" id="3_eypy5"]
+[ext_resource type="Texture2D" uid="uid://8nm872ht6amy" path="res://Numbers and Bomb/Image_5EDADC21-45B9-41B6-891E-B4EC18179500.png" id="2_7okd1"]
 [ext_resource type="Texture2D" uid="uid://ues41626uj88" path="res://Numbers and Bomb/0.png" id="3_skflu"]
+[ext_resource type="Texture2D" uid="uid://d3fkuc5c33jdn" path="res://Numbers and Bomb/Image_F958E501-BDC6-4553-983C-713AD3A1B291.png" id="3_wb0gv"]
+[ext_resource type="Texture2D" uid="uid://cx5rd5lejketw" path="res://Numbers and Bomb/Image_D3ADDBB5-4F38-4802-BEE3-1C5238DCD67E.png" id="4_dopch"]
 [ext_resource type="Texture2D" uid="uid://c53c3kboga4sx" path="res://Numbers and Bomb/1.png" id="4_ph1h4"]
+[ext_resource type="Texture2D" uid="uid://bnydaxrdqgyom" path="res://Numbers and Bomb/Image_55D3E1CF-14D7-4CE8-A9F0-C14089570FE3.png" id="5_8xth2"]
 [ext_resource type="Texture2D" uid="uid://cxcwovlq20e3g" path="res://Numbers and Bomb/2.png" id="5_mc83r"]
 [ext_resource type="Texture2D" uid="uid://c8wy4hc8446ox" path="res://Numbers and Bomb/3.png" id="6_11as0"]
+[ext_resource type="Texture2D" uid="uid://8h4pnmqm7i2l" path="res://Numbers and Bomb/Image_D8B6A593-835E-444C-A8D3-BC7257E4788C.png" id="6_w6vjm"]
 [ext_resource type="Texture2D" uid="uid://c0rvbliwgmy2r" path="res://Numbers and Bomb/4.png" id="7_7jrio"]
+[ext_resource type="Texture2D" uid="uid://bv0773krgxww6" path="res://Numbers and Bomb/Image_B72A8607-FB38-4D22-B965-4594D0C6D244.png" id="7_dqh0t"]
 [ext_resource type="Texture2D" uid="uid://bb8qhshabx6m8" path="res://Numbers and Bomb/5.png" id="8_eqm1h"]
+[ext_resource type="Texture2D" uid="uid://euqf0y5tu12o" path="res://Numbers and Bomb/Image_A95FDB67-0DD5-4200-8F41-BEB11F600C81.png" id="8_o0vuf"]
 [ext_resource type="Texture2D" uid="uid://bkphsnx1g15qp" path="res://Numbers and Bomb/6.png" id="9_f7no2"]
+[ext_resource type="Texture2D" uid="uid://c7wcwybtkxrfx" path="res://Numbers and Bomb/Image_EED82D66-D6B4-4545-83E2-B1E4DD77738F.png" id="9_gbjpd"]
 [ext_resource type="Texture2D" uid="uid://cb1sdcpdsooqw" path="res://Numbers and Bomb/7.png" id="10_3qjk2"]
+[ext_resource type="Texture2D" uid="uid://c0dgomukva5k8" path="res://Numbers and Bomb/Image_D81CB55E-E4E1-455A-B3FD-A3D0794AC086.png" id="10_g0j3p"]
+[ext_resource type="Texture2D" uid="uid://tkclaiswa61v" path="res://Numbers and Bomb/Image_7416FEC2-29EB-4AEC-91C0-E9929CF8093A.png" id="11_cwo0s"]
 [ext_resource type="Texture2D" uid="uid://taoum5a37u7i" path="res://Numbers and Bomb/9.png" id="12_82e5d"]
+[ext_resource type="Texture2D" uid="uid://b3fj2gy14jy60" path="res://Numbers and Bomb/Image_762D7CC1-F7CE-4388-8B5C-8C98D5529A8F.png" id="12_enyem"]
 [ext_resource type="Texture2D" uid="uid://cht31jafus128" path="res://Numbers and Bomb/8 (2).png" id="12_jln7w"]
+[ext_resource type="Texture2D" uid="uid://mk1mkoec6q2v" path="res://Numbers and Bomb/10.png" id="23_oxdsp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ryflk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_rokg3")
+"texture": ExtResource("2_7okd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wb0gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dopch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8xth2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w6vjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dqh0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_o0vuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_gbjpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_g0j3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cwo0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_enyem")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"Bomb",
 "speed": 5.0
 }]
@@ -28,9 +68,6 @@ animations = [{
 [sub_resource type="SpriteFrames" id="SpriteFrames_wmiy7"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_eypy5")
-}, {
 "duration": 1.0,
 "texture": ExtResource("3_skflu")
 }, {
@@ -60,6 +97,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_82e5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_oxdsp")
 }],
 "loop": 1,
 "name": &"Counter",
@@ -76,13 +116,13 @@ grow_vertical = 2
 script = ExtResource("1_qdhxh")
 
 [node name="Bomb" type="AnimatedSprite2D" parent="." unique_id=1392113976]
-position = Vector2(16, -6)
+position = Vector2(360, -161)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_ryflk")
 animation = &"Bomb"
 
 [node name="Counter" type="AnimatedSprite2D" parent="Bomb" unique_id=1071173326]
-position = Vector2(-44.000122, 15.999998)
+position = Vector2(-724.00006, 308)
 scale = Vector2(0.7609375, 0.7937499)
 sprite_frames = SubResource("SpriteFrames_wmiy7")
 animation = &"Counter"

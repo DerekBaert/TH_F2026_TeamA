@@ -4,7 +4,7 @@ extends Control
 @onready var live3 = $Live3
 @onready var live4 = $Live4
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		Var.Lives -= 1
 	match Var.Lives:
