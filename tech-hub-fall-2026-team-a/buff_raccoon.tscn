@@ -1,67 +1,174 @@
 [gd_scene format=3 uid="uid://b1qijfsgepwxx"]
 
 [ext_resource type="Script" uid="uid://ct4gh3xd0iole" path="res://buff_raccoon.gd" id="1_x1dkm"]
-[ext_resource type="Texture2D" uid="uid://b4rnago18x2df" path="res://Numbers and Bomb/Image_59CEC125-1203-4561-B1F9-0AD901239896.png" id="2_du0cb"]
-[ext_resource type="Texture2D" uid="uid://dcw3lcm683kud" path="res://Numbers and Bomb/Image_1698A7AE-7941-4F10-8935-E33FDFB15313.png" id="3_35hrv"]
-[ext_resource type="Texture2D" uid="uid://b21kusq8v5ktb" path="res://Numbers and Bomb/Image_136543A9-4430-4989-BC5C-5776CF66BA62.png" id="4_gs75e"]
-[ext_resource type="Texture2D" uid="uid://dimsdmlqi612b" path="res://Numbers and Bomb/Image_E5BD8516-D715-422F-A3A7-48384B284246.png" id="5_g5qlf"]
-[ext_resource type="Texture2D" uid="uid://nycbh04q6221" path="res://Numbers and Bomb/Image_C5EBFDDA-E692-498D-BE56-1B6222DD28CE.png" id="6_7urys"]
-[ext_resource type="Texture2D" uid="uid://dqh7lap3o5hmb" path="res://Numbers and Bomb/Image_E511C8DD-6EDC-4B16-A5C2-A3E7DB14AD12.png" id="7_d1ml6"]
-[ext_resource type="Texture2D" uid="uid://b01x1ehtx5i26" path="res://Numbers and Bomb/Image_FB7E4C7B-AD89-4AE4-A2F3-60FE794A0274.png" id="8_6tv3g"]
+[ext_resource type="Texture2D" uid="uid://cfv7ony5ep72c" path="res://Numbers and Bomb/BuffIdle.png" id="2_w6nkb"]
+[ext_resource type="Texture2D" uid="uid://dv2tqj17djqyx" path="res://Numbers and Bomb/Lifting.png" id="3_lbhwe"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_7qckb"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_7qckb"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_du0cb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_du0cb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_du0cb")
-}],
-"loop": 1,
-"name": &"BuffIdle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_35hrv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_gs75e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_g5qlf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_7urys")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_d1ml6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_6tv3g")
-}],
-"loop": 1,
-"name": &"Lifting",
-"speed": 5.0
-}]
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_7qckb"]
+
+[sub_resource type="Animation" id="Animation_0162k"]
+resource_name = "BuffIdle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 0, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("2_w6nkb"), ExtResource("2_w6nkb")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [3, 3]
+}
+
+[sub_resource type="Animation" id="Animation_nbg4j"]
+resource_name = "Lifting"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("3_lbhwe"), ExtResource("3_lbhwe")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [6, 6]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer:speed_scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [4.0]
+}
+
+[sub_resource type="Animation" id="Animation_rmwvu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_w6nkb")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer:speed_scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [4.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x1dkm"]
+_data = {
+&"BuffIdle": SubResource("Animation_0162k"),
+&"Lifting": SubResource("Animation_nbg4j"),
+&"RESET": SubResource("Animation_rmwvu")
+}
 
 [node name="BuffRaccoon" type="StaticBody2D" unique_id=1970439701]
 physics_material_override = SubResource("PhysicsMaterial_7qckb")
 script = ExtResource("1_x1dkm")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=505674002]
-sprite_frames = SubResource("SpriteFrames_7qckb")
-animation = &"Lifting"
-autoplay = "BuffIdle"
-frame_progress = 0.5623991
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=431151846]
 shape = SubResource("CircleShape2D_7qckb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1755635540]
+texture = ExtResource("2_w6nkb")
+hframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=657044074]
+libraries/ = SubResource("AnimationLibrary_x1dkm")
+autoplay = &"BuffIdle"
+speed_scale = 4.0

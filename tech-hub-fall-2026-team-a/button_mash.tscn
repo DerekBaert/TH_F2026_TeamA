@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bdqjgoiyxcbe8" path="res://button_mash.gd" id="1_cpwfe"]
 [ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="2_ohfq8"]
+[ext_resource type="PackedScene" uid="uid://b1qijfsgepwxx" path="res://buff_raccoon.tscn" id="3_ohfq8"]
 
 [node name="ButtonMash" type="Control" unique_id=383932915]
 layout_mode = 3
@@ -53,6 +54,10 @@ offset_right = 1077.0
 offset_bottom = 877.0
 theme_override_font_sizes/font_size = 100
 text = "PUSH"
+
+[node name="BuffRaccoon" parent="." unique_id=1970439701 instance=ExtResource("3_ohfq8")]
+position = Vector2(936, 530)
+scale = Vector2(0.3, 0.3)
 
 [connection signal="timerEnded" from="Timer" to="." method="_on_timer_timer_ended"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
