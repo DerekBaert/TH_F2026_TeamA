@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dddl143k302k"]
+
+[ext_resource type="PackedScene" uid="uid://bsrow36s7p6q7" path="res://Dodge game folder by chalmers/node_2d.tscn" id="1_wolw7"]
+
+[node name="Main microgame" unique_id=1186444040 instance=ExtResource("1_wolw7")]
+position = Vector2(895, 547)
+
+[node name="Node2D" parent="." index="0" unique_id=430544565]
+position = Vector2(-251, 196)
