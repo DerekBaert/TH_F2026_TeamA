@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://d3dbmt73tcc3t"]
+
+[ext_resource type="Script" uid="uid://cinob505l256s" path="res://space_mash.gd" id="1_7uap0"]
+[ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="2_yixau"]
+[ext_resource type="PackedScene" uid="uid://b1qijfsgepwxx" path="res://buff_raccoon.tscn" id="3_yixau"]
+
+[node name="SpaceMash" type="Control" unique_id=383932915]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7uap0")
+
+[node name="Panel" type="Panel" parent="." unique_id=2035365365]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=342202280]
+layout_mode = 0
+offset_left = 226.0
+offset_top = 135.0
+offset_right = 607.0
+offset_bottom = 272.0
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=1658204759]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Score: "
+
+[node name="Label2" type="Label" parent="HBoxContainer" unique_id=516978324]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "1"
+
+[node name="Timer" parent="." unique_id=1075798 instance=ExtResource("2_yixau")]
+layout_mode = 1
+offset_left = 126.0
+offset_top = 895.0
+offset_right = 126.0
+offset_bottom = 895.0
+
+[node name="Label" type="Label" parent="." unique_id=1184361643]
+layout_mode = 0
+offset_left = 731.0
+offset_top = 815.0
+offset_right = 1260.0
+offset_bottom = 898.0
+theme_override_font_sizes/font_size = 60
+text = "PRESS [SPACEBAR]"
+
+[node name="BuffRaccoon" parent="." unique_id=1970439701 instance=ExtResource("3_yixau")]
+position = Vector2(1005.00006, 636)
+scale = Vector2(0.3, 0.3)
+
+[connection signal="timerEnded" from="Timer" to="." method="_on_timer_timer_ended"]

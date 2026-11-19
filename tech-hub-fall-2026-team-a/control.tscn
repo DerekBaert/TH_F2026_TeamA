@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cvdy6hugt6p42" path="res://control.gd" id="1_0fbet"]
 [ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="2_62e2m"]
+[ext_resource type="PackedScene" uid="uid://b1qijfsgepwxx" path="res://buff_raccoon.tscn" id="3_qtu10"]
 
-[node name="Control" type="Control" unique_id=383932915]
+[node name="ButtonMash" type="Control" unique_id=383932915]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -53,6 +54,9 @@ offset_left = 126.0
 offset_top = 895.0
 offset_right = 126.0
 offset_bottom = 895.0
+
+[node name="BuffRaccoon" parent="." unique_id=746043055 instance=ExtResource("3_qtu10")]
+position = Vector2(1369, 607)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="timerEnded" from="Timer" to="." method="_on_timer_timer_ended"]
