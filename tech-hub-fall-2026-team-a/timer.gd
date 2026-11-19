@@ -4,7 +4,7 @@ extends Control
 var seconds = time
 var frame = seconds
 signal timerEnded
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	counter.frame = seconds
 	if seconds < 0:
 		timerEnded.emit()

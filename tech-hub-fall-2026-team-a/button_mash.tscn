@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cyc8xljps0qib"]
+
+[ext_resource type="Script" uid="uid://bdqjgoiyxcbe8" path="res://button_mash.gd" id="1_cpwfe"]
+[ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="2_ohfq8"]
+
+[node name="ButtonMash" type="Control" unique_id=383932915]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cpwfe")
+
+[node name="Panel" type="Panel" parent="." unique_id=2035365365]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=342202280]
+layout_mode = 0
+offset_left = 226.0
+offset_top = 135.0
+offset_right = 607.0
+offset_bottom = 272.0
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=1658204759]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Score: "
+
+[node name="Label2" type="Label" parent="HBoxContainer" unique_id=516978324]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "1"
+
+[node name="Timer" parent="." unique_id=1075798 instance=ExtResource("2_ohfq8")]
+layout_mode = 1
+offset_left = 126.0
+offset_top = 895.0
+offset_right = 126.0
+offset_bottom = 895.0
+
+[node name="Button" type="Button" parent="." unique_id=1329202555]
+layout_mode = 0
+offset_left = 803.0
+offset_top = 732.0
+offset_right = 1077.0
+offset_bottom = 877.0
+theme_override_font_sizes/font_size = 100
+text = "PUSH"
+
+[connection signal="timerEnded" from="Timer" to="." method="_on_timer_timer_ended"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
