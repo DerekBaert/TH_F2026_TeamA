@@ -45,15 +45,13 @@ sprite_frames = SubResource("SpriteFrames_4y2s6")
 animation = &"swim"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=309136221]
-visible = false
-position = Vector2(1.4999981, 11.000003)
+position = Vector2(-2, 1)
 scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1734421362]
-visible = false
-position = Vector2(160, 132)
-rect = Rect2(-245, -221, 162.52821, 160)
+position = Vector2(160, 130)
+rect = Rect2(-217, -197, 114, 136)
 
 [node name="MobPath" type="Path2D" parent="." unique_id=1097798503]
 curve = SubResource("Curve2D_nokgg")
