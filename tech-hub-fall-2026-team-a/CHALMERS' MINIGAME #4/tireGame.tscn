@@ -7,19 +7,31 @@
 [node name="game scene" type="Node2D" unique_id=1588718868]
 
 [node name="Tire Raccoon" parent="." unique_id=794382885 instance=ExtResource("1_8rfo0")]
-position = Vector2(78, 341)
+position = Vector2(75, 22)
 
 [node name="victory" parent="." unique_id=1287505344 instance=ExtResource("2_qr7mb")]
-position = Vector2(2282, 292)
+position = Vector2(2390, 321)
 
 [node name="Node2D" parent="." unique_id=430544565 instance=ExtResource("3_o3jjb")]
-position = Vector2(-1, 433)
+position = Vector2(4, 558)
 
 [node name="Node2D2" parent="." unique_id=1516005651 instance=ExtResource("3_o3jjb")]
-position = Vector2(649, 344)
+position = Vector2(630, 521)
 
 [node name="Node2D3" parent="." unique_id=1409504600 instance=ExtResource("3_o3jjb")]
-position = Vector2(1226, 171)
+position = Vector2(1221, 538)
 
 [node name="Node2D4" parent="." unique_id=383685961 instance=ExtResource("3_o3jjb")]
-position = Vector2(2050, 344)
+position = Vector2(1831, 535)
+
+[node name="Node2D7" parent="." unique_id=675515527 instance=ExtResource("3_o3jjb")]
+position = Vector2(880, 533)
+
+[node name="Node2D6" parent="." unique_id=910125969 instance=ExtResource("3_o3jjb")]
+position = Vector2(1528, 540)
+
+[node name="Node2D5" parent="." unique_id=1126053370 instance=ExtResource("3_o3jjb")]
+position = Vector2(347, 562)
+
+[node name="wall" parent="." unique_id=2034473022 instance=ExtResource("3_o3jjb")]
+position = Vector2(-390, -57)

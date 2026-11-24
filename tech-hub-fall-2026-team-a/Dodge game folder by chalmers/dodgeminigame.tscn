@@ -6,17 +6,26 @@
 
 [node name="Main microgame" unique_id=1186444040 instance=ExtResource("1_igc17")]
 
-[node name="Node2D" parent="." index="0" unique_id=430544565]
-position = Vector2(-905, 280)
-scale = Vector2(4.88, 0.84927726)
+[node name="Mob5" parent="Node2D3" parent_id_path=PackedInt32Array(623883196) index="0" unique_id=870371796 instance=ExtResource("2_nxpny")]
+position = Vector2(26.375946, 1068.8618)
+rotation = -1.5767611
+collision_mask = 1
 
-[node name="Node2D2" parent="." index="3" unique_id=1085867642]
-position = Vector2(-678, -567.99994)
-scale = Vector2(2.6004539, 1.0000015)
-
-[node name="Node2D3" parent="." index="4" unique_id=780543231]
-position = Vector2(1012, -556)
-scale = Vector2(2.52, 1)
+[node name="Timer" parent="Node2D3" parent_id_path=PackedInt32Array(623883196) index="3" unique_id=1075798 instance=ExtResource("3_nxpny")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 193.35965
+offset_top = 1903.8806
+offset_right = 193.35965
+offset_bottom = 1903.8806
+grow_horizontal = 1
+grow_vertical = 1
+rotation = -1.5913163
+size_flags_horizontal = 0
+size_flags_vertical = 0
+seconds = 6
+metadata/_edit_use_anchors_ = true
 
 [node name="Mob" parent="." index="6" unique_id=323349407]
 position = Vector2(-115, -524)
@@ -30,20 +39,4 @@ position = Vector2(116, -524)
 [node name="Mob4" parent="." index="9" unique_id=198716036]
 position = Vector2(294, -500)
 
-[node name="Mob5" parent="." index="10" unique_id=870371796 instance=ExtResource("2_nxpny")]
-position = Vector2(-4, -583)
-collision_mask = 1
-
-[node name="Timer" parent="." index="11" unique_id=1075798 instance=ExtResource("3_nxpny")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = -793.0
-offset_top = -446.0
-offset_right = -793.0
-offset_bottom = -446.0
-grow_horizontal = 1
-grow_vertical = 1
-size_flags_horizontal = 0
-size_flags_vertical = 0
-metadata/_edit_use_anchors_ = true
+[connection signal="timerEnded" from="Node2D3/Timer" to="." method="_on_timer_timer_ended"]
