@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://ccya6kn8b0jmr"]
 
-[ext_resource type="Script" uid="uid://cgihtcso8yyvc" path="res://Dodge game folder by chalmers/mob.gd" id="1_nokgg"]
-[ext_resource type="Texture2D" uid="uid://b4y6rar036xtf" path="res://Dodge game folder by chalmers/garbage.jpg" id="2_q8br1"]
-[ext_resource type="Texture2D" uid="uid://dg1w6b5skxx6f" path="res://Dodge game folder by chalmers/images (3).jpg" id="3_klsau"]
+[ext_resource type="Script" uid="uid://cgihtcso8yyvc" path="res://Dodge game folder by chalmers/mob.gd" id="1_pbf3v"]
+[ext_resource type="Texture2D" uid="uid://b4y6rar036xtf" path="res://Dodge game folder by chalmers/garbage.jpg" id="2_2yfif"]
+[ext_resource type="Texture2D" uid="uid://dg1w6b5skxx6f" path="res://Dodge game folder by chalmers/images (3).jpg" id="3_3co1r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4y2s6"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_q8br1")
+"texture": ExtResource("2_2yfif")
 }],
 "loop": 1,
 "name": &"swim",
@@ -16,7 +16,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_klsau")
+"texture": ExtResource("3_3co1r")
 }],
 "loop": 1,
 "name": &"walk",
@@ -34,7 +34,7 @@ point_count = 2
 
 [node name="Mob" type="RigidBody2D" unique_id=323349407 groups=["Trash"]]
 collision_mask = 0
-script = ExtResource("1_nokgg")
+script = ExtResource("1_pbf3v")
 metadata/_edit_vertical_guides_ = [-182.0]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1490883678]
@@ -45,6 +45,7 @@ sprite_frames = SubResource("SpriteFrames_4y2s6")
 animation = &"swim"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=309136221]
+visible = false
 position = Vector2(1.4999981, 11.000003)
 scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_onrkg")

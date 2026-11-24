@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dvdhryn4ceg5v"]
+
+[ext_resource type="PackedScene" uid="uid://bkha484qymv8c" path="res://Dodge game folder by chalmers/land.tscn" id="1_wtcfe"]
+
+[node name="Node2D" unique_id=430544565 instance=ExtResource("1_wtcfe")]
+
+[node name="Images" parent="." index="0" unique_id=397404587]
+scale = Vector2(6.1173153, 0.82214755)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=888848417]
+scale = Vector2(2.4, 1)

@@ -1,8 +1,8 @@
 extends Control
-@export var time = 10
+
 @onready var counter = $Bomb/Counter
 @onready var bomb = $Bomb
-var seconds = time
+var seconds = Var.time
 var frame = seconds
 signal timerEnded
 func _process(_delta: float) -> void:

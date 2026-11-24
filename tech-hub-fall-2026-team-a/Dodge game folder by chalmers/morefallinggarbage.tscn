@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dyr3fswjrvdtm"]
+
+[ext_resource type="PackedScene" uid="uid://ccya6kn8b0jmr" path="res://Dodge game folder by chalmers/fallinggarbage.tscn" id="1_07asu"]
+
+[node name="Mob" unique_id=323349407 instance=ExtResource("1_07asu")]
+
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=1490883678]
+position = Vector2(0, 1)
+scale = Vector2(0.4837176, 0.43105057)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=309136221]
+visible = false
+position = Vector2(2, 1.9999998)
+scale = Vector2(0.9688668, 1.1499991)
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2" unique_id=1734421362]
+position = Vector2(166, 168)
