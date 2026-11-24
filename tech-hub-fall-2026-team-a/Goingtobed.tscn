@@ -8,11 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://bji8casij8s52" path="res://bed.tscn" id="5_t2u54"]
 [ext_resource type="Texture2D" uid="uid://bcan41yv20cvy" path="res://Shelf-1.png.png" id="6_nisqu"]
 [ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="9_t2u54"]
-[ext_resource type="PackedScene" uid="uid://bq131wp0vutvj" path="res://UI/transition.tscn" id="9_t5vfk"]
+[ext_resource type="PackedScene" uid="uid://bppcclo2qa3ds" path="res://UI/outscreen.tscn" id="9_t5vfk"]
+[ext_resource type="PackedScene" uid="uid://bq131wp0vutvj" path="res://UI/transition.tscn" id="10_t2u54"]
 
-[node name="Platformer" type="Node2D" unique_id=779583030]
-position = Vector2(278, 241)
-scale = Vector2(0.7, 0.7)
+[node name="Platformer" type="Node2D" unique_id=1892636184]
 script = ExtResource("1_dwhhm")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=845475726]
@@ -26,78 +25,85 @@ scale = Vector2(1, 1.0024556)
 texture = ExtResource("1_56lom")
 
 [node name="Platform" parent="." unique_id=1230808869 instance=ExtResource("2_wbv6k")]
-position = Vector2(308, 473)
-scale = Vector2(14, 2)
+position = Vector2(343.00003, 454.99997)
+scale = Vector2(11.005, 1.574)
 
-[node name="Platform2" parent="." unique_id=766229505 instance=ExtResource("2_wbv6k")]
-position = Vector2(960, 1300)
-scale = Vector2(200.48146, 29.87828)
+[node name="Shelf1_png" type="Sprite2D" parent="Platform" unique_id=365671778]
+position = Vector2(-0.07142639, 9.5000305)
+scale = Vector2(0.07142857, 0.5)
+texture = ExtResource("6_nisqu")
 
 [node name="Platform3" parent="." unique_id=1688962478 instance=ExtResource("2_wbv6k")]
-position = Vector2(843, 756)
-scale = Vector2(14, 2)
+position = Vector2(678, 689)
+scale = Vector2(9.38, 1.34)
+
+[node name="Shelf1_png2" type="Sprite2D" parent="Platform3" unique_id=64930261]
+position = Vector2(7.6293945e-06, 9.500061)
+scale = Vector2(0.07142857, 0.5)
+texture = ExtResource("6_nisqu")
 
 [node name="Platform4" parent="." unique_id=183026001 instance=ExtResource("2_wbv6k")]
-position = Vector2(1252, 274.00003)
-scale = Vector2(14, 2)
+position = Vector2(1006.00006, 350.00003)
+scale = Vector2(11.085, 1.589)
+
+[node name="Shelf1_png3" type="Sprite2D" parent="Platform4" unique_id=595143472]
+position = Vector2(0, 9.9999695)
+scale = Vector2(0.07142857, 0.5)
+texture = ExtResource("6_nisqu")
+
+[node name="Ground" parent="." unique_id=766229505 instance=ExtResource("2_wbv6k")]
+position = Vector2(954, 1167.0001)
+scale = Vector2(200.48146, 29.87828)
+
+[node name="Floor" type="Sprite2D" parent="Ground" unique_id=1950207240]
+position = Vector2(-3.7908742, -11.044811)
+scale = Vector2(0.014963977, 0.083672814)
+texture = ExtResource("4_t5vfk")
+
+[node name="Floor2" type="Sprite2D" parent="Ground" unique_id=531195055]
+position = Vector2(3.8158145, -11.044811)
+scale = Vector2(0.014963977, 0.083672814)
+texture = ExtResource("4_t5vfk")
 
 [node name="Player" parent="." unique_id=942199509 instance=ExtResource("3_dwhhm")]
-position = Vector2(962, 923)
-
-[node name="Floor" type="Sprite2D" parent="." unique_id=1950207240]
-position = Vector2(200, 970)
-scale = Vector2(3, 2.5)
-texture = ExtResource("4_t5vfk")
-
-[node name="Floor2" type="Sprite2D" parent="." unique_id=531195055]
-position = Vector2(1725, 970)
-scale = Vector2(3, 2.5)
-texture = ExtResource("4_t5vfk")
+position = Vector2(333, 808.00006)
+scale = Vector2(0.775, 0.775)
 
 [node name="Bed" parent="." unique_id=45186695 instance=ExtResource("5_t2u54")]
-position = Vector2(2117, 100)
-scale = Vector2(1.5, 1.5)
+position = Vector2(1529, 196)
 
 [node name="Platform5" parent="." unique_id=792226513 instance=ExtResource("2_wbv6k")]
-position = Vector2(2070, 700)
-scale = Vector2(42.23999, 30)
+position = Vector2(1666.9999, 663.00006)
+scale = Vector2(36.195, 25.693)
 
-[node name="Floor3" type="Sprite2D" parent="." unique_id=1211021479]
-position = Vector2(2320, 360)
-scale = Vector2(2.6490014, 2.5390623)
+[node name="Floor3" type="Sprite2D" parent="Platform5" unique_id=1211021479]
+position = Vector2(5.91856, -11.333334)
+scale = Vector2(0.06271312, 0.08463541)
 texture = ExtResource("4_t5vfk")
 
 [node name="Platform6" parent="." unique_id=612205199 instance=ExtResource("2_wbv6k")]
-position = Vector2(-675, 6)
+position = Vector2(-107, 48.000004)
 scale = Vector2(10, 100)
 
 [node name="Platform7" parent="." unique_id=1534892962 instance=ExtResource("2_wbv6k")]
-position = Vector2(2600, 6)
+position = Vector2(2029, 34.000004)
 scale = Vector2(10, 100)
 
 [node name="Platform8" parent="." unique_id=259381705 instance=ExtResource("2_wbv6k")]
-position = Vector2(950, -630)
+position = Vector2(983, -490)
 rotation = 1.5707964
 scale = Vector2(10, 200)
 
-[node name="Shelf1_png" type="Sprite2D" parent="." unique_id=365671778]
-position = Vector2(307, 492)
-texture = ExtResource("6_nisqu")
+[node name="Outscreen" parent="." unique_id=264902749 instance=ExtResource("9_t5vfk")]
 
-[node name="Shelf1_png3" type="Sprite2D" parent="." unique_id=595143472]
-position = Vector2(1252, 294)
-texture = ExtResource("6_nisqu")
+[node name="Timer" parent="Outscreen" unique_id=235282551 instance=ExtResource("9_t2u54")]
+z_index = 2
+offset_left = 105.0
+offset_top = 914.0
+offset_right = 110.0
+offset_bottom = 914.0
+seconds = 6
 
-[node name="Shelf1_png2" type="Sprite2D" parent="." unique_id=64930261]
-position = Vector2(843, 775)
-texture = ExtResource("6_nisqu")
+[node name="Transition" parent="." unique_id=665164855 instance=ExtResource("10_t2u54")]
 
-[node name="Timer" parent="." unique_id=1075798 instance=ExtResource("9_t2u54")]
-offset_left = -284.2857
-offset_top = 1124.2856
-offset_right = -284.2857
-offset_bottom = 1124.2856
-
-[node name="Transition" parent="." unique_id=665164855 instance=ExtResource("9_t5vfk")]
-
-[connection signal="timerEnded" from="Timer" to="." method="TimerEnded"]
+[connection signal="timerEnded" from="Outscreen/Timer" to="." method="TimerEnded"]

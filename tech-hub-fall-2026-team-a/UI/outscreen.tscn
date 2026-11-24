@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://10t2rawwe2fm" path="res://UI/OuterScreen.png" id="1_l7ans"]
 
-[node name="Outscreen" type="CanvasLayer" unique_id=409512992]
+[node name="Outscreen" type="CanvasLayer" unique_id=264902749]
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=43104776]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=790255792]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
