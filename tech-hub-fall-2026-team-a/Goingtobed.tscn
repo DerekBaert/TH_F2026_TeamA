@@ -98,6 +98,6 @@ offset_top = 1124.2856
 offset_right = -284.2857
 offset_bottom = 1124.2856
 
-[node name="Transition" parent="." unique_id=1394628150 instance=ExtResource("9_t5vfk")]
+[node name="Transition" parent="." unique_id=665164855 instance=ExtResource("9_t5vfk")]
 
 [connection signal="timerEnded" from="Timer" to="." method="TimerEnded"]
