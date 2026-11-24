@@ -55,10 +55,10 @@ animations = [{
 "texture": ExtResource("10_g0j3p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_cwo0s")
+"texture": ExtResource("12_enyem")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_enyem")
+"texture": ExtResource("11_cwo0s")
 }],
 "loop": 0,
 "name": &"Bomb",
@@ -114,6 +114,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qdhxh")
+seconds = 7
 
 [node name="Bomb" type="AnimatedSprite2D" parent="." unique_id=1392113976]
 position = Vector2(433, -184)
