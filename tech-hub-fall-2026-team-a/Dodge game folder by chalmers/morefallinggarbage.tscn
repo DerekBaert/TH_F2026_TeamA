@@ -2,16 +2,23 @@
 
 [ext_resource type="PackedScene" uid="uid://ccya6kn8b0jmr" path="res://Dodge game folder by chalmers/fallinggarbage.tscn" id="1_07asu"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8kyd"]
+size = Vector2(277.64392, 153.91315)
+
 [node name="Mob" unique_id=323349407 instance=ExtResource("1_07asu")]
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=1490883678]
 position = Vector2(0, 1)
 scale = Vector2(0.4837176, 0.43105057)
+animation = &"walk"
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=309136221]
-visible = false
-position = Vector2(2, 1.9999998)
+visible = true
+position = Vector2(0.50000286, 33.5)
 scale = Vector2(0.9688668, 1.1499991)
+shape = SubResource("RectangleShape2D_t8kyd")
 
 [node name="VisibleOnScreenNotifier2D" parent="." index="2" unique_id=1734421362]
-position = Vector2(166, 168)
+visible = true
+position = Vector2(166, 153)
+rect = Rect2(-300, -199, 270, 168)
