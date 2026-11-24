@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://03y2k2ncccq0"]
+
+[ext_resource type="PackedScene" uid="uid://bsrow36s7p6q7" path="res://Dodge game folder by chalmers/node_2d.tscn" id="1_igc17"]
+[ext_resource type="PackedScene" uid="uid://dyr3fswjrvdtm" path="res://Dodge game folder by chalmers/morefallinggarbage.tscn" id="2_nxpny"]
+[ext_resource type="PackedScene" uid="uid://fisx5v5gi0k7" path="res://UI/timer.tscn" id="3_nxpny"]
+
+[node name="Main microgame" unique_id=1186444040 instance=ExtResource("1_igc17")]
+
+[node name="Node2D" parent="." index="0" unique_id=430544565]
+position = Vector2(-905, 280)
+scale = Vector2(4.88, 0.84927726)
+
+[node name="Node2D2" parent="." index="3" unique_id=1085867642]
+position = Vector2(-678, -567.99994)
+scale = Vector2(2.6004539, 1.0000015)
+
+[node name="Node2D3" parent="." index="4" unique_id=780543231]
+position = Vector2(1012, -556)
+scale = Vector2(2.52, 1)
+
+[node name="Mob" parent="." index="6" unique_id=323349407]
+position = Vector2(-115, -524)
+
+[node name="Mob2" parent="." index="7" unique_id=1764495173]
+position = Vector2(-292, -517)
+
+[node name="Mob3" parent="." index="8" unique_id=479433716]
+position = Vector2(116, -524)
+
+[node name="Mob4" parent="." index="9" unique_id=198716036]
+position = Vector2(269, -518)
+
+[node name="Mob5" parent="." index="10" unique_id=870371796 instance=ExtResource("2_nxpny")]
+position = Vector2(1, -520)
+
+[node name="Timer" parent="." index="11" unique_id=1075798 instance=ExtResource("3_nxpny")]

@@ -1,6 +1,6 @@
 extends RigidBody2D
 signal hit
-
+var time = 10
 func _ready():
 	gravity_scale = 0.0
 	var mob_types = Array($AnimatedSprite2D.sprite_frames.get_animation_names())
@@ -11,7 +11,7 @@ func _ready():
 	mob_spawn_location.progress_ratio = randf()
 	print(mob_spawn_location.position)
 	position.x = mob_spawn_location.position.x
-	await get_tree().create_timer(2).timeout #change to the timer thingymabob
+	await get_tree().create_timer(time - 3).timeout #change to the timer thingymabob
 	gravity_scale = 1.0
 
 
