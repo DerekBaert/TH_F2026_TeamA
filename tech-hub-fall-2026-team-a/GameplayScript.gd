@@ -1,9 +1,6 @@
 extends Control
 var Minigame :int = randi_range(1,1)
 
-func _ready() -> void:
-	$AnimationPlayer.play("Transition")
-	pass
 func SceneSwitch():
 	match Minigame:
 		1:
@@ -17,7 +14,6 @@ func SceneSwitch():
 pass
 # get_tree().change_scene_to_file("")
 
-
-func _on_change_minigames_timeout() -> void:
+func ChangeMinigames() -> void:
 	SceneSwitch()
 	pass # Replace with function body.
