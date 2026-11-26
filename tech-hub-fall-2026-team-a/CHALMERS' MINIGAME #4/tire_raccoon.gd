@@ -5,8 +5,10 @@ var SPEED = 400.0
 const JUMP_VELOCITY = -600.0
 signal hit
 
+
 func _ready():
 	$AnimatedSprite2D.play()
+	$AnimatedSprite2D.animation = "roll"
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -21,10 +23,16 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	velocity.x = SPEED
 	move_and_slide()
+	
 
-
+	
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	hit.emit()
-	print("touched")
-	SPEED = 0
+	if area.is_in_group("Teleporter"):
+		print("touched teleporter")
+		position = Vector2(70, 199)
+	else:
+		hit.emit()
+		print("touched")
+		SPEED = 0
+		$AnimatedSprite2D.animation = "Stopped"

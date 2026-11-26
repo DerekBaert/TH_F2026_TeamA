@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bsrow36s7p6q7"]
+S[gd_scene format=3 uid="uid://bsrow36s7p6q7"]
 
 [ext_resource type="PackedScene" uid="uid://ovlx30wpjsle" path="res://Dodge game folder by chalmers/dodgeraccoon.tscn" id="2_epypp"]
 [ext_resource type="PackedScene" uid="uid://bso7lejyybem4" path="res://Dodge game folder by chalmers/land.tscn" id="3_cti10"]
@@ -58,6 +58,25 @@ func _on_player_hit() -> void:
 
 [node name="Main microgame" type="Node2D" unique_id=1186444040]
 script = SubResource("GDScript_epypp")
+
+[node name="Mob" parent="." unique_id=323349407 instance=ExtResource("4_0hol4")]
+position = Vector2(-94, -358)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob2" parent="." unique_id=1764495173 instance=ExtResource("4_0hol4")]
+position = Vector2(-271, -351)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob3" parent="." unique_id=479433716 instance=ExtResource("4_0hol4")]
+position = Vector2(137, -358)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob4" parent="." unique_id=198716036 instance=ExtResource("4_0hol4")]
+position = Vector2(290, -352)
+collision_mask = 1
 
 [node name="Node2D" parent="." unique_id=430544565 instance=ExtResource("3_cti10")]
 position = Vector2(76, 958)

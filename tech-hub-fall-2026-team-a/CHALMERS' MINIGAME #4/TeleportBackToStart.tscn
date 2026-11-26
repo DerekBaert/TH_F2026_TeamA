@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cultjrswldndq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4y2s6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8arsp"]
+size = Vector2(918.25, 20)
+
+[node name="Node2D" type="StaticBody2D" unique_id=2063797942]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=385282315]
+visible = false
+shape = SubResource("RectangleShape2D_4y2s6")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1361009463 groups=["Teleporter"]]
+visible = false
+
+[node name="Node" type="CollisionShape2D" parent="Area2D" unique_id=1092487849]
+position = Vector2(-2, 1)
+shape = SubResource("RectangleShape2D_8arsp")

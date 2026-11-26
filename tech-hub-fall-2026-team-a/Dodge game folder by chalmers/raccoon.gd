@@ -68,7 +68,7 @@ func _physics_process(delta: float) -> void:
 	update_movement(delta)
 
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_area_2d_body_entered(body: Node2D) -> void: #add defeat thing
 	if body.is_in_group("Trash"):
 		hit.emit()
 		current_state = State.Squished 
