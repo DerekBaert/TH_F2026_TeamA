@@ -20,28 +20,29 @@ position = Vector2(1951, 330)
 position = Vector2(1078, 16)
 zoom = Vector2(0.9, 0.9)
 
-[node name="Node2D" parent="." unique_id=430544565 instance=ExtResource("3_o3jjb")]
-position = Vector2(9, 406)
+[node name="Platform0" parent="." unique_id=430544565 instance=ExtResource("3_o3jjb")]
+position = Vector2(-46, 388)
 
-[node name="Node2D5" parent="." unique_id=1126053370 instance=ExtResource("3_o3jjb")]
+[node name="Platform1" parent="." unique_id=1126053370 instance=ExtResource("3_o3jjb")]
 position = Vector2(621, 401)
 
-[node name="Node2D6" parent="." unique_id=1721238205 instance=ExtResource("3_o3jjb")]
+[node name="platform2" parent="." unique_id=1721238205 instance=ExtResource("3_o3jjb")]
 position = Vector2(1228, 404)
 
-[node name="wall" parent="." unique_id=2034473022 instance=ExtResource("3_o3jjb")]
-position = Vector2(-388, -165)
-
-[node name="Node2D4" parent="." unique_id=1642838507 instance=ExtResource("4_qr7mb")]
+[node name="flagplatform" parent="." unique_id=1642838507 instance=ExtResource("4_qr7mb")]
 position = Vector2(2018, 397)
 rotation = 1.5714195
 
-[node name="Node2D2" parent="." unique_id=364712057 instance=ExtResource("5_o3jjb")]
-position = Vector2(803, 1209)
+[node name="teleporter" parent="." unique_id=364712057 instance=ExtResource("5_o3jjb")]
+position = Vector2(255, 1225)
 
-[node name="Node2D2" parent="Node2D2" unique_id=2063797942 instance=ExtResource("5_o3jjb")]
-position = Vector2(678, 17)
+[node name="teleporter2" parent="." unique_id=2063797942 instance=ExtResource("5_o3jjb")]
+position = Vector2(1444, 1231)
 
-[node name="Node2D2" parent="Node2D2/Node2D2" unique_id=471032409 instance=ExtResource("5_o3jjb")]
-position = Vector2(692, -1085.0001)
+[node name="teleporter3" parent="." unique_id=471032409 instance=ExtResource("5_o3jjb")]
+position = Vector2(2173, 140.99988)
 rotation = 1.5528715
+
+[node name="wall" parent="." unique_id=162013737 instance=ExtResource("4_qr7mb")]
+position = Vector2(-216, 573)
+rotation = -1.5765656

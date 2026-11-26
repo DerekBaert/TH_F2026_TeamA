@@ -71,10 +71,10 @@ radius = 63.007935
 [sub_resource type="CircleShape2D" id="CircleShape2D_8arsp"]
 radius = 64.195015
 
-[node name="Tire Raccoon" type="CharacterBody2D" unique_id=794382885]
+[node name="Tire Raccoon" type="CharacterBody2D" unique_id=794382885 groups=["Skateboard Raccoon"]]
 script = ExtResource("1_3k1bt")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=762311773]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=762311773 groups=["Skateboard Raccoon"]]
 position = Vector2(-1, 7.999999)
 scale = Vector2(0.4196309, 0.4196309)
 sprite_frames = SubResource("SpriteFrames_4y2s6")
@@ -82,14 +82,14 @@ animation = &"roll"
 autoplay = "roll"
 frame_progress = 0.5169635
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1513132270]
+[node name="Area2D" type="Area2D" parent="." unique_id=1513132270 groups=["Skateboard Raccoon"]]
 position = Vector2(0, -31)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1372895759]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1372895759 groups=["Skateboard Raccoon"]]
 position = Vector2(-1, 32)
 shape = SubResource("CircleShape2D_4y2s6")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=165771064]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=165771064 groups=["Skateboard Raccoon"]]
 position = Vector2(0, 0.99999994)
 scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("CircleShape2D_8arsp")
