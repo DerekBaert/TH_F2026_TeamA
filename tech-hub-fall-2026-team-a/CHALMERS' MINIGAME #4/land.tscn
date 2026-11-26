@@ -8,7 +8,7 @@ size = Vector2(393.5, 828.25)
 
 [sub_resource type="Curve2D" id="Curve2D_1e1pr"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 200, 232, 0, 0, 0, 0, 201, 76)
+"points": PackedVector2Array(0, 0, 0, 0, 205, 356, 0, 0, 0, 0, 201, 76)
 }
 point_count = 2
 
@@ -29,5 +29,5 @@ shape = SubResource("RectangleShape2D_4y2s6")
 curve = SubResource("Curve2D_1e1pr")
 
 [node name="LandPathLocation" type="PathFollow2D" parent="LandPath" unique_id=241541956]
-position = Vector2(200, 232)
-rotation = -1.5643861
+position = Vector2(205, 356)
+rotation = -1.5850811

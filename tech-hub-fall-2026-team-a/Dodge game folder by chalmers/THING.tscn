@@ -60,6 +60,25 @@ func _on_player_hit() -> void:
 position = Vector2(579, 339)
 script = SubResource("GDScript_epypp")
 
+[node name="Mob" parent="." unique_id=323349407 instance=ExtResource("4_0hol4")]
+position = Vector2(-94, -358)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob2" parent="." unique_id=1764495173 instance=ExtResource("4_0hol4")]
+position = Vector2(-271, -351)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob3" parent="." unique_id=479433716 instance=ExtResource("4_0hol4")]
+position = Vector2(137, -358)
+disable_mode = 1
+collision_mask = 1
+
+[node name="Mob4" parent="." unique_id=198716036 instance=ExtResource("4_0hol4")]
+position = Vector2(290, -352)
+collision_mask = 1
+
 [node name="Node2D" parent="." unique_id=430544565 instance=ExtResource("3_cti10")]
 position = Vector2(-833, 410)
 scale = Vector2(1.5600014, 1)
@@ -80,25 +99,6 @@ scale = Vector2(0.3, 0.3)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=426400365]
 position = Vector2(54, -46)
-
-[node name="Mob" parent="." unique_id=323349407 instance=ExtResource("4_0hol4")]
-position = Vector2(-94, -358)
-disable_mode = 1
-collision_mask = 1
-
-[node name="Mob2" parent="." unique_id=1764495173 instance=ExtResource("4_0hol4")]
-position = Vector2(-271, -351)
-disable_mode = 1
-collision_mask = 1
-
-[node name="Mob3" parent="." unique_id=479433716 instance=ExtResource("4_0hol4")]
-position = Vector2(137, -358)
-disable_mode = 1
-collision_mask = 1
-
-[node name="Mob4" parent="." unique_id=198716036 instance=ExtResource("4_0hol4")]
-position = Vector2(290, -352)
-collision_mask = 1
 
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

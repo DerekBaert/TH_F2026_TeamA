@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ovlx30wpjsle"]
 
-[ext_resource type="Script" uid="uid://bxhp5gy2kb735" path="res://raccoon.gd" id="1_4flbx"]
-[ext_resource type="Texture2D" uid="uid://dl6vlya7bo4ub" path="res://download (1).png" id="2_onrkg"]
-[ext_resource type="Texture2D" uid="uid://brc5lb8p1cdvu" path="res://download.png" id="3_i3pqv"]
+[ext_resource type="Script" uid="uid://bxhp5gy2kb735" path="res://Dodge game folder by chalmers/raccoon.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dl6vlya7bo4ub" path="res://Dodge game folder by chalmers/download (1).png" id="2_onrkg"]
+[ext_resource type="Texture2D" uid="uid://brc5lb8p1cdvu" path="res://Dodge game folder by chalmers/download.png" id="3_i3pqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("2_onrkg")

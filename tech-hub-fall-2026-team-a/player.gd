@@ -6,11 +6,11 @@ signal hit
 @export var gravity: int = speed * 6
 @onready var animations: AnimatedSprite2D = $AnimatedSprite2D
 
-enum State{IDLE, WALK, JUMP, DOWN}
-var current_state: State = State.IDLE
+enum State{IDLE, WALK, JUMP, DOWN} #declare state types
+var current_state: State = State.IDLE #set current state to idle
 
 func handle_input() -> void:
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor(): #if is on the ground, you are allowed to jump.
 		velocity.y = jump_speed
 		current_state = State.JUMP
 		

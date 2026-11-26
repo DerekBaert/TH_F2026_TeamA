@@ -3,35 +3,45 @@
 [ext_resource type="PackedScene" uid="uid://beoux0hpw1f35" path="res://CHALMERS' MINIGAME #4/tire_raccoon.tscn" id="1_8rfo0"]
 [ext_resource type="PackedScene" uid="uid://da2v4ppaf14hc" path="res://CHALMERS' MINIGAME #4/victory.tscn" id="2_qr7mb"]
 [ext_resource type="PackedScene" uid="uid://bso7lejyybem4" path="res://CHALMERS' MINIGAME #4/land.tscn" id="3_o3jjb"]
+[ext_resource type="PackedScene" uid="uid://bkha484qymv8c" path="res://Dodge game folder by chalmers/land.tscn" id="4_qr7mb"]
+[ext_resource type="PackedScene" uid="uid://cultjrswldndq" path="res://CHALMERS' MINIGAME #4/TeleportBackToStart.tscn" id="5_o3jjb"]
 
 [node name="game scene" type="Node2D" unique_id=1588718868]
+position = Vector2(53, 25)
 
 [node name="Tire Raccoon" parent="." unique_id=794382885 instance=ExtResource("1_8rfo0")]
-position = Vector2(75, 22)
+position = Vector2(70, -27)
+scale = Vector2(1.2, 1.2)
 
 [node name="victory" parent="." unique_id=1287505344 instance=ExtResource("2_qr7mb")]
-position = Vector2(2390, 321)
+position = Vector2(1951, 330)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=837730294]
+position = Vector2(1078, 16)
+zoom = Vector2(0.9, 0.9)
 
 [node name="Node2D" parent="." unique_id=430544565 instance=ExtResource("3_o3jjb")]
-position = Vector2(4, 558)
-
-[node name="Node2D2" parent="." unique_id=1516005651 instance=ExtResource("3_o3jjb")]
-position = Vector2(630, 521)
-
-[node name="Node2D3" parent="." unique_id=1409504600 instance=ExtResource("3_o3jjb")]
-position = Vector2(1221, 538)
-
-[node name="Node2D4" parent="." unique_id=383685961 instance=ExtResource("3_o3jjb")]
-position = Vector2(1831, 535)
-
-[node name="Node2D7" parent="." unique_id=675515527 instance=ExtResource("3_o3jjb")]
-position = Vector2(880, 533)
-
-[node name="Node2D6" parent="." unique_id=910125969 instance=ExtResource("3_o3jjb")]
-position = Vector2(1528, 540)
+position = Vector2(9, 406)
 
 [node name="Node2D5" parent="." unique_id=1126053370 instance=ExtResource("3_o3jjb")]
-position = Vector2(347, 562)
+position = Vector2(621, 401)
+
+[node name="Node2D6" parent="." unique_id=1721238205 instance=ExtResource("3_o3jjb")]
+position = Vector2(1228, 404)
 
 [node name="wall" parent="." unique_id=2034473022 instance=ExtResource("3_o3jjb")]
-position = Vector2(-390, -57)
+position = Vector2(-388, -165)
+
+[node name="Node2D4" parent="." unique_id=1642838507 instance=ExtResource("4_qr7mb")]
+position = Vector2(2018, 397)
+rotation = 1.5714195
+
+[node name="Node2D2" parent="." unique_id=364712057 instance=ExtResource("5_o3jjb")]
+position = Vector2(803, 1209)
+
+[node name="Node2D2" parent="Node2D2" unique_id=2063797942 instance=ExtResource("5_o3jjb")]
+position = Vector2(678, 17)
+
+[node name="Node2D2" parent="Node2D2/Node2D2" unique_id=471032409 instance=ExtResource("5_o3jjb")]
+position = Vector2(692, -1085.0001)
+rotation = 1.5528715
