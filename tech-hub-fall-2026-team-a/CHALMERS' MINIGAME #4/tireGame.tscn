@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://beoux0hpw1f35" path="res://CHALMERS' MINIGAME #4/tire_raccoon.tscn" id="1_8rfo0"]
 [ext_resource type="PackedScene" uid="uid://da2v4ppaf14hc" path="res://CHALMERS' MINIGAME #4/victory.tscn" id="2_qr7mb"]
-[ext_resource type="PackedScene" uid="uid://bso7lejyybem4" path="res://CHALMERS' MINIGAME #4/land.tscn" id="3_o3jjb"]
+[ext_resource type="PackedScene" uid="uid://bso7lejyybem4" path="res://CHALMERS' MINIGAME #4/platforms.tscn" id="3_o3jjb"]
 [ext_resource type="PackedScene" uid="uid://bkha484qymv8c" path="res://Dodge game folder by chalmers/land.tscn" id="4_qr7mb"]
 [ext_resource type="PackedScene" uid="uid://cultjrswldndq" path="res://CHALMERS' MINIGAME #4/TeleportBackToStart.tscn" id="5_o3jjb"]
 
