@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cwn61l0dqx26w" path="res://GameplayScript.gd" id="1_erorw"]
 [ext_resource type="Texture2D" uid="uid://tk41vi0kcqf3" path="res://SleepingRaccoon/Image_5DE72370-39C0-4916-8927-FD0434E297EC.png" id="2_erorw"]
 [ext_resource type="PackedScene" uid="uid://cvd3n730ngyof" path="res://UI/LivesBar.tscn" id="2_kthky"]
+[ext_resource type="PackedScene" uid="uid://dn0so0b8s8dyl" path="res://UI/scorebar.tscn" id="4_irv2v"]
 
 [sub_resource type="Animation" id="Animation_erorw"]
 length = 0.001
@@ -105,5 +106,12 @@ autostart = true
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2069843923]
 position = Vector2(958.99994, 506.00003)
 zoom = Vector2(3, 3)
+
+[node name="Score" parent="." unique_id=2124105632 instance=ExtResource("4_irv2v")]
+layout_mode = 1
+offset_left = -173.0
+offset_top = -2.0
+offset_right = -173.0
+offset_bottom = -2.0
 
 [connection signal="timeout" from="ChangeMinigames" to="." method="ChangeMinigames"]

@@ -4,7 +4,7 @@ extends Control
 @onready var live3 = $Live3
 @onready var live4 = $Live4
 
-func _process(_delta: float) -> void:
+func _ready() -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		Var.Lives -= 1
 	match Var.Lives:
@@ -12,8 +12,15 @@ func _process(_delta: float) -> void:
 			live4.play("LiveLost")
 		2:
 			live3.play("LiveLost")
+			live4.play("LiveLost")
 		1:
 			live2.play("LiveLost")
+			live4.play("LiveLost")
+			live3.play("LiveLost")
+			
 		0:
 			live1.play("LiveLost")
+			live4.play("LiveLost")
+			live2.play("LiveLost")
+			live3.play("LiveLost")
 	pass

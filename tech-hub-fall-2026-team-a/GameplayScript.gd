@@ -6,7 +6,7 @@ func SceneSwitch():
 		1:
 			get_tree().change_scene_to_file("res://Goingtobed.tscn")
 		2:
-			pass
+			get_tree().change_scene_to_file("res://Dodge game folder by chalmers/node_2d.tscn")
 		3:
 			pass
 		_:

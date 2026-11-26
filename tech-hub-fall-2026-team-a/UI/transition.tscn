@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bq131wp0vutvj"]
 
+[ext_resource type="Script" uid="uid://dm28e18gb7qo4" path="res://UI/transition.gd" id="1_inf52"]
+
 [sub_resource type="Animation" id="Animation_rhoid"]
 resource_name = "MinigameEnd"
 length = 0.33333334
@@ -22,10 +24,10 @@ tracks/1/path = NodePath("Camera2D:zoom")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1, 1)]
+"values": [Vector2(1, 1), Vector2(3, 3)]
 }
 
 [sub_resource type="Animation" id="Animation_1yi3g"]
@@ -97,6 +99,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_inf52")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=647232585]
 libraries/ = SubResource("AnimationLibrary_pj2mc")
@@ -108,7 +111,6 @@ zoom = Vector2(3, 3)
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2090055218]
 layout_mode = 0
-offset_left = -17.0
-offset_top = -21.0
-offset_right = 1936.0
-offset_bottom = 1044.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.99966997, 0.94117606)

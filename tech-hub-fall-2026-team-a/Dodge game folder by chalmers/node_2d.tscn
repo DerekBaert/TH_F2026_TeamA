@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bsrow36s7p6q7"]
 
 [ext_resource type="PackedScene" uid="uid://ovlx30wpjsle" path="res://Dodge game folder by chalmers/dodgeraccoon.tscn" id="2_epypp"]
-[ext_resource type="PackedScene" uid="uid://bkha484qymv8c" path="res://Dodge game folder by chalmers/land.tscn" id="3_cti10"]
+[ext_resource type="PackedScene" uid="uid://bso7lejyybem4" path="res://Dodge game folder by chalmers/land.tscn" id="3_cti10"]
 [ext_resource type="PackedScene" uid="uid://ccya6kn8b0jmr" path="res://Dodge game folder by chalmers/fallinggarbage.tscn" id="4_0hol4"]
 
 [sub_resource type="GDScript" id="GDScript_epypp"]
@@ -57,47 +57,46 @@ func _on_player_hit() -> void:
 "
 
 [node name="Main microgame" type="Node2D" unique_id=1186444040]
-position = Vector2(579, 339)
 script = SubResource("GDScript_epypp")
 
 [node name="Node2D" parent="." unique_id=430544565 instance=ExtResource("3_cti10")]
-position = Vector2(-833, 410)
+position = Vector2(76, 958)
 scale = Vector2(1.5600014, 1)
 
 [node name="Node2D2" parent="." unique_id=603843382 instance=ExtResource("3_cti10")]
-position = Vector2(-893, -602)
+position = Vector2(16, -54)
 rotation = 1.5853796
 
 [node name="Node2D3" parent="." unique_id=623883196 instance=ExtResource("3_cti10")]
-position = Vector2(1065.0001, -603)
+position = Vector2(1974.0001, -55)
 rotation = 1.5767611
 
 [node name="Player" parent="." unique_id=588413158 instance=ExtResource("2_epypp")]
-position = Vector2(0, 34)
+position = Vector2(909, 582)
 scale = Vector2(0.3, 0.3)
 
 [node name="MobTimer" type="Timer" parent="." unique_id=74455349]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=426400365]
-position = Vector2(54, -46)
+position = Vector2(963, 502)
 
 [node name="Mob" parent="." unique_id=323349407 instance=ExtResource("4_0hol4")]
-position = Vector2(-94, -358)
+position = Vector2(815, 190)
 disable_mode = 1
 collision_mask = 1
 
 [node name="Mob2" parent="." unique_id=1764495173 instance=ExtResource("4_0hol4")]
-position = Vector2(-271, -351)
+position = Vector2(638, 197)
 disable_mode = 1
 collision_mask = 1
 
 [node name="Mob3" parent="." unique_id=479433716 instance=ExtResource("4_0hol4")]
-position = Vector2(137, -358)
+position = Vector2(1046, 190)
 disable_mode = 1
 collision_mask = 1
 
 [node name="Mob4" parent="." unique_id=198716036 instance=ExtResource("4_0hol4")]
-position = Vector2(290, -352)
+position = Vector2(1199, 196)
 collision_mask = 1
 
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]

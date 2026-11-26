@@ -106,4 +106,10 @@ seconds = 6
 
 [node name="Transition" parent="." unique_id=665164855 instance=ExtResource("10_t2u54")]
 
+[node name="Move" type="Timer" parent="." unique_id=956549261]
+wait_time = 7.33
+one_shot = true
+autostart = true
+
 [connection signal="timerEnded" from="Outscreen/Timer" to="." method="TimerEnded"]
+[connection signal="timeout" from="Move" to="." method="_on_time_timeout"]

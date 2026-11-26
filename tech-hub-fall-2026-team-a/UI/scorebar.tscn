@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dn0so0b8s8dyl"]
+
+[ext_resource type="Script" uid="uid://b0o51icbfsj1d" path="res://Score.gd" id="1_8ys6j"]
+[ext_resource type="Texture2D" uid="uid://ues41626uj88" path="res://Numbers and Bomb/0.png" id="2_s6suc"]
+[ext_resource type="Texture2D" uid="uid://c53c3kboga4sx" path="res://Numbers and Bomb/1.png" id="3_msavo"]
+[ext_resource type="Texture2D" uid="uid://cxcwovlq20e3g" path="res://Numbers and Bomb/2.png" id="4_f64ko"]
+[ext_resource type="Texture2D" uid="uid://c8wy4hc8446ox" path="res://Numbers and Bomb/3.png" id="5_trpms"]
+[ext_resource type="Texture2D" uid="uid://c0rvbliwgmy2r" path="res://Numbers and Bomb/4.png" id="6_i8thk"]
+[ext_resource type="Texture2D" uid="uid://bb8qhshabx6m8" path="res://Numbers and Bomb/5.png" id="7_hami0"]
+[ext_resource type="Texture2D" uid="uid://bkphsnx1g15qp" path="res://Numbers and Bomb/6.png" id="8_6vtam"]
+[ext_resource type="Texture2D" uid="uid://cb1sdcpdsooqw" path="res://Numbers and Bomb/7.png" id="9_5y540"]
+[ext_resource type="Texture2D" uid="uid://cht31jafus128" path="res://Numbers and Bomb/8 (2).png" id="10_ssayw"]
+[ext_resource type="Texture2D" uid="uid://taoum5a37u7i" path="res://Numbers and Bomb/9.png" id="11_8q7md"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ryflk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_s6suc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_msavo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f64ko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_trpms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i8thk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hami0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6vtam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5y540")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ssayw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8q7md")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wmiy7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_s6suc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_msavo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f64ko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_trpms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i8thk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hami0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6vtam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5y540")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ssayw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8q7md")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Score" type="Control" unique_id=2124105632]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ys6j")
+
+[node name="Digit1" type="AnimatedSprite2D" parent="." unique_id=1501570079]
+position = Vector2(481, 143)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_ryflk")
+
+[node name="Digit2" type="AnimatedSprite2D" parent="." unique_id=1908539394]
+position = Vector2(284, 144)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_wmiy7")
